@@ -1,0 +1,133 @@
+@import "/src/app/styles/variables";
+.wrapper {
+  position: fixed;
+  width: calc(100vw - 6px);
+  height: 100vh;
+  backdrop-filter: blur(2px);
+  z-index: 30;
+  left: 0;
+  top: 0;
+  font-family: $primary-font;
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 420px;
+    width: 100%;
+    // max-height: max-content;
+    height: max-content;
+    padding: 30px 0px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    box-shadow: 1px 2px 10px 0px #15137140;
+    gap: 30px;
+    // max-height: 340px;
+    .title {
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+      line-height: 18px;
+      text-align: center;
+    }
+  }
+  .topBlock {
+    display: flex;
+    padding: 0px 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 10px;
+    padding: 0px 30px;
+  }
+  .secondModal {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .help {
+    padding: 10px 30px;
+    font-size: 14px;
+    color: rgba(144, 144, 144, 1);
+  }
+  .iconContainer {
+    display: flex;
+    justify-content: end;
+    padding: 0px 30px;
+    img {
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+    }
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .imageBlock {
+      display: flex;
+      width: 100%;
+      max-height: 85px;
+      img {
+        width: 100%;
+        // height: 100%;
+      }
+    }
+  }
+  .inputContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    // width: calc(100% - 70px);
+    padding: 0px 30px;
+    .complaintInput {
+      padding: 0;
+      //   width: 100%;
+      border: none;
+      outline: none;
+      resize: none;
+      font-family: $primary-font;
+      background: rgba(243, 243, 243, 1);
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 10px;
+    }
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    .button {
+      border: none;
+      outline: none;
+      background: transparent;
+      background: linear-gradient(
+        89.57deg,
+        #05ad25 0.38%,
+        #0294a1 50%,
+        #181381 99.62%
+      );
+      color: white;
+      border-radius: 10px;
+      font-family: $primary-font;
+      font-size: 14px;
+      padding: 0;
+      min-height: 30px;
+      width: 100%;
+      span {
+        margin: 0px 20px;
+      }
+    }
+  }
+}

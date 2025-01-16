@@ -1,0 +1,246 @@
+{
+  "homePage": {
+    "lessonCounter": "课程",
+    "userCounter": "用户",
+    "mainText": "世界各地的化妆课程，适用于任何数字设备和您方便的语言"
+  },
+  "navigation": {
+    "myNews": {
+      "title": "我的新闻",
+      "description": "您订阅的人的课程和事件"
+    },
+    "myManual": {
+      "title": "我的文件",
+      "description": "包含功能和文档的信息面板"
+    },
+    "mySupport": {
+      "title": "我的请求",
+      "description": "用户支持服务"
+    },
+    "FAQ": {
+      "title": "常见问题",
+      "description": "关于任何主题的常见问题及其答案"
+    },
+    "footer": {
+      "publicOffer": "公开报价",
+      "privacyPolicy": "隐私政策",
+      "allRights": "版权所有"
+    }
+  },
+  "burger": {
+    "user": "成为用户",
+    "seller": "成为作者",
+    "addProfile": "添加个人资料",
+    "logout": "注销",
+    "viewer": "您是访客"
+  },
+  "lessonPage": {
+    "filter": {
+      "popular": "按流行度",
+      "date": "按发布时间"
+    },
+    "placeholder": "搜索",
+    "editButton": "编辑",
+    "buyButton": "购买",
+    "published": "已发布",
+    "shareMenu": {
+      "favourite": "加入收藏",
+      "unFavourite": "移除",
+      "share": {
+        "title": "分享",
+        "message": "链接已复制到剪贴板"
+      },
+      "notInteresting": {
+        "title": "不感兴趣",
+        "lessonDelete": "课程已删除",
+        "Cancel": "取消",
+        "tell": {
+          "title": "告诉我们原因",
+          "description": "我们非常重视您对该课程不感兴趣的原因以及您不喜欢的内容",
+          "sendButton": "发送审查请求"
+        }
+      },
+      "complaint": "举报"
+    }
+  },
+  "userPage": {
+    "placeholderName": "按姓名搜索",
+    "placeholderLocation": "按位置搜索",
+    "notFoundUser": "用户未找到"
+  },
+  "authorization": {
+    "login": {
+      "title": "登录",
+      "forgot": "忘记密码？",
+      "button": "登录",
+      "withOutAccount": "没有账户？",
+      "registration": "注册"
+    },
+    "registration": {
+      "title": "注册",
+      "button": "注册",
+      "withAccount": "已经有账户？",
+      "login": "登录"
+    },
+    "forgotPassword": {
+      "forgotPasswordText": "找回密码"
+    },
+    "confirmEmail": {
+      "loading": "正在加载数据",
+      "confirmEmailText": "",
+      "backOnMainPage": "返回主页",
+      "notification": {
+        "error": "未找到邮箱。请重试确认。",
+        "error2": "确认链接已过期，请检查您的邮箱。",
+        "error3": "重新发送激活邮件时发生错误。",
+        "success": "邮箱验证成功！",
+        "successResend": "确认邮件已成功重新发送。"
+      }
+    },
+    "notifications": {
+      "loginSuccess": "您已成功登录",
+      "loginError": "登录错误",
+      "registrationError": "您没有同意处理个人数据",
+      "passwordDontMatch": "密码不一致",
+      "accountCreate": "账户已成功创建，请检查您的邮箱。",
+      "mailSend": "邮件已发送至邮箱。",
+      "sendAgain": "再次发送邮件将在",
+      "sendAgainSecond": "秒后",
+      "sendAgainButton": "重新发送邮件"
+    }
+  },
+  "profile": {
+    "edit": "编辑",
+    "save": "保存更改",
+    "publish": "发布",
+    "aboutMe": "关于我",
+    "call": "拨打电话",
+    "editProfileLabels": {
+      "name": "名字",
+      "lastName": "姓",
+      "number": "电话号码",
+      "location": "城市"
+    },
+    "navigation": {
+      "myLesson": "我的课程",
+      "access": "课程访问",
+      "favouriteLessons": "收藏的课程",
+      "myEvents": "我的事件",
+      "subscribers": "订阅者",
+      "subscriptions": "订阅",
+      "finance": "财务"
+    },
+    "skeleton": {
+      "noLessons": "没有找到课程",
+      "noAccessLessons": "没有可访问的课程",
+      "noFavouriteLessons": "没有收藏的课程"
+    }
+  },
+  "userProfile": {
+    "subscribe": "订阅",
+    "subscribed": "您已订阅",
+    "aboutMe": "关于我",
+    "navigation": {
+      "lesson": "课程",
+      "events": "事件",
+      "subscribers": "订阅者",
+      "subscriptions": "订阅"
+    }
+  },
+  "player": {
+    "placeholder": "搜索",
+    "navigation": {
+      "favourite": "加入收藏",
+      "unFavourite": "移除",
+      "share": "分享",
+      "complaint": "举报",
+      "subscribe": "订阅",
+      "subscribed": "您已订阅",
+      "comments": "评论",
+      "placeholder": "留下评论",
+      "send": "发送",
+      "replyBtn": "回复",
+      "replyText": "输入回复",
+      "replyCancel": "取消",
+      "replySend": "提交回复",
+      "open": "打开",
+      "close": "关闭",
+      "replies": "回复"
+    }
+  },
+  "agreement": {
+    "text_1": "我同意",
+    "link_1": "处理我的个人数据",
+    "text_2": "并",
+    "link_2": "我同意条款"
+  },
+  "seller": {
+    "user": {
+      "fullAccess": "完全访问平台上的所有材料。",
+      "interaction": "与讲师互动。",
+      "access": "访问用户社区。",
+      "noPossibility": "无法上传和销售自己的课程。",
+      "current": "您当前的计划"
+    },
+    "seller": {
+      "allPossibility": "USER 的所有功能。",
+      "scale": "随着课程收藏和人气的增长，能够扩展存储容量。",
+      "monetization": "完全访问平台工具以推广和变现内容。",
+      "choice": "选择课程存储容量。",
+      "sellDownload": "能够上传和销售自己的课程。",
+      "volume": "上传到网站的数据量",
+      "quantity": "月数",
+      "seller": "切换为卖家",
+      "month": "月",
+      "month_3": "三个月",
+      "month_6": "六个月"
+    }
+  },
+  "publishButton": {
+    "lesson": "发布课程",
+    "event": "发布活动",
+    "photo": "发布照片"
+  },
+  "default": {
+    "name": "名字",
+    "lastName": "姓氏",
+    "city": "城市",
+    "country": "国家",
+    "mail": "电子邮件",
+    "password": "密码",
+    "repeatPassword": "重复密码",
+    "Telegram": "Telegram",
+    "soon": "此标签即将上线"
+  },
+  "myRequest": {
+    "title": "支持",
+    "navigation": {
+      "button_1": "所有",
+      "button_2": "打开",
+      "button_3": "关闭",
+      "createRequest": "创建请求"
+    },
+    "table": {
+      "number": "编号",
+      "status": "状态",
+      "name": "名称",
+      "createDate": "创建日期",
+      "updateDate": "更新日期"
+    },
+    "request": {
+      "create": "创建请求",
+      "name": "输入名字*",
+      "lastName": "输入姓氏*",
+      "number": "输入电话号码*",
+      "text": "请求内容",
+      "file": "拖动文件或点击下方按钮从设备选择",
+      "selectFile": "选择文件",
+      "next": "下一步"
+    },
+    "chat": {
+      "title": "支持聊天",
+      "placeholder": "输入消息",
+      "send": "发送"
+    }
+  }
+}

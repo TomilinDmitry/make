@@ -1,0 +1,318 @@
+@import "/src/app/styles/variables";
+
+.wrapper {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  // gap: 200px;
+  justify-content: space-between;
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  transition: background 1s ease;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+  .whiteCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    z-index: 10;
+  }
+  .line {
+    position: absolute;
+    width: 113px;
+    height: 2px;
+    left: 30px;
+    background: #d9d9d9;
+  }
+  .lineLeft {
+    position: absolute;
+    width: 110px;
+    height: 2px;
+    left: -110px;
+    background: #d9d9d9;
+  }
+}
+
+.circleActive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  transition: background 1s ease;
+
+  background: linear-gradient(
+    0deg,
+    #05ad25 0.48%,
+    #0294a1 73.77%,
+    #181381 147.06%
+  );
+  border-radius: 50%;
+  position: relative;
+  .whiteCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+  }
+  .lineActive {
+    position: absolute;
+    width: 113px;
+    height: 2px;
+    left: 30px;
+    background: linear-gradient(
+      38.25deg,
+      #05ad25 20.04%,
+      #0294a1 39.03%,
+      #0294a1 46.25%,
+      #181381 68.13%
+    );
+    z-index: 10;
+  }
+  .stepTwoLine {
+    background: #03988c;
+    position: absolute;
+    width: 226px;
+    height: 2px;
+    left: 30px;
+  }
+  .lineLeft {
+    position: absolute;
+    width: 110px;
+    height: 2px;
+    left: -110px;
+    background: #d9d9d9;
+  }
+}
+//Circle One
+.stepsTwoCircleOne {
+  @extend .circleActive;
+  background: #05a552;
+}
+.stepsThreeCircleOne {
+  @extend .circleActive;
+  background: #05a552;
+}
+.stepsFourCircleOne {
+  @extend .circleActive;
+  background: #05a552;
+}
+
+//CircleTwo
+
+.circleTwoStepTwo {
+  @extend .circleActive;
+  background: #0d5792;
+  position: relative;
+  .stepTwoRightLine {
+    position: absolute;
+    width: 113px;
+    height: 2px;
+    left: 30px;
+    background: #113c8b;
+    z-index: 10;
+  }
+}
+
+.circleTwoStepThree {
+  @extend .circleActive;
+  background: #038e9f;
+  position: relative;
+  .stepThreeRightLine {
+    position: absolute;
+    width: 113px;
+    height: 2px;
+    left: 30px;
+    background: #0a6696;
+  }
+}
+//
+.circleTwoStepFour {
+  @extend .circleActive;
+  background: #03998a;
+  position: relative;
+  .stepThreeRightLine {
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    left: 50px;
+    background: #0a6696;
+  }
+}
+
+// CircleThree
+.circleThreeStepThree {
+  @extend .circle;
+  background: #113d8c;
+}
+.circleThreeStepFour {
+  @extend .circle;
+  background: #038e9f;
+}
+
+.stepThreeLine {
+  position: absolute;
+  width: 45px;
+  height: 2px;
+  left: 50px;
+  background: #113c8b;
+}
+
+.stepFourLineLeft {
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  right: 50px;
+  background: #0a6696;
+}
+
+.stepFourCircle {
+  @extend .circle;
+  background: #113c8b;
+}
+
+// @media screen and (max-width: 800px) {
+//   .circleTwoStepThree {
+//     .stepTwoLine {
+//       width: 188px;
+//     }
+//   }
+//   .circle {
+//     .lineLeft {
+//       left: -95px;
+//       width: 95px;
+//     }
+//   }
+// }
+@media screen and (max-width: 600px) {
+  .circleActive {
+    .lineActive {
+      width: 95px;
+    }
+  }
+  .circleTwoStepThree {
+    .stepTwoLine {
+      width: 35vw;
+    }
+  }
+  .circle {
+    .lineLeft {
+      left: -17.667vw;
+      width: 103px;
+    }
+  }
+  .circleTwoStepTwo {
+    .stepTwoRightLine {
+      width: 103px;
+      left: 10px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .circleTwoStepTwo {
+    .stepTwoRightLine {
+      width: 75px;
+      left: 30px;
+    }
+  }
+}
+@media screen and (max-width: 430px) {
+  .circleActive {
+    .lineActive {
+      width: 75px;
+    }
+  }
+  .circleTwoStepThree {
+    .stepTwoLine {
+      width: 133px;
+    }
+  }
+  .circle {
+    .lineLeft {
+      left: -15.667vw;
+      width: 70px;
+    }
+  }
+  .circleTwoStepTwo {
+    .stepTwoRightLine {
+      width: 70px;
+      left: 30px;
+    }
+  }
+}
+
+// @media screen and (max-width: 500px) {
+//   .stepsTwoCircleOne {
+//     .stepTwoLine {
+//       left: 28px;
+//     }
+//   }
+//   .circleTwoStepTwo {
+//     .stepTwoLine {
+//       left: 30px;
+//     }
+//     .stepTwoRightLine {
+//       left: 28px;
+//     }
+//   }
+
+//   .stepsThreeCircleOne {
+//     .stepTwoLine {
+//       left: 28px;
+//     }
+//   }
+//   .circleTwoStepThree {
+//     .stepTwoLine {
+//       left: 30px;
+//     }
+//   }
+//   .stepThreeLine {
+//     left: 28px;
+//   }
+//   .stepsFourCircleOne {
+//     .stepTwoLine {
+//       left: 30px;
+//     }
+//   }
+//   .circleTwoStepFour {
+//     .stepTwoLine {
+//       left: 30px;
+//     }
+//   }
+//   .stepFourLineLeft {
+//     right: 29px;
+//   }
+//   .wrapper {
+//     height: 30px;
+//   }
+//   .circle {
+//     width: 30px;
+//     height: 30px;
+//     .line {
+//       left: 28px;
+//     }
+//     .whiteCircle {
+//       height: 10px;
+//       width: 10px;
+//     }
+//   }
+//   .circleActive {
+//     width: 30px;
+//     height: 30px;
+//     .whiteCircle {
+//       height: 10px;
+//       width: 10px;
+//     }
+//     .lineActive {
+//       left: 30px;
+//       max-width: 83px;
+//     }
+//   }
+// }

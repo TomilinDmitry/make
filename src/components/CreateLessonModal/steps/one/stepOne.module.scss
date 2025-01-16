@@ -1,0 +1,233 @@
+@import "/src/app/styles/variables";
+
+.mainBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 536px;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 100%;
+}
+.inputNameVideoContainer {
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 496px;
+  width: 100%;
+  min-height: 5vh;
+  position: relative;
+  .inputNameVideo {
+    border: none;
+    outline: none;
+    background: transparent;
+    max-width: 507px;
+    width: 100%;
+    padding: 0;
+    height: max-content;
+    margin-top: 5px;
+    font-size: 14px;
+    resize: none;
+    font-family: $primary_font;
+  }
+  .labelNameVideo {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    top: 5px;
+    left: 20px;
+  }
+  .counter {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    font-size: 12px;
+    color: rgba(144, 144, 144, 1);
+  }
+}
+.descriptionVideoContainer {
+  @extend .inputNameVideoContainer;
+  min-height: 6vh;
+  .textarea {
+    // max-width: 468px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: transparent;
+    min-height: 5vh;
+    // height: 100%;
+    padding: 0;
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: $primary_font;
+  }
+}
+
+.voiceTranslateContanier {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .title {
+      margin: 0px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .text {
+      color: #909090;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+  .select {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    align-items: center;
+    .line {
+      display: block;
+      min-width: 2px;
+      height: 3.704vh;
+      background: #909090;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      transform: rotate(25deg);
+    }
+    .active {
+      border: 1px solid;
+      padding: 7px 12px;
+      border-radius: 25px;
+      box-sizing: border-box;
+      border-image-slice: 10; /* border-radius*2 */
+      border-image-repeat: round;
+      border-image-width: 10px; /* border-radius*2 */
+      border-image-source: url("../../../../app/assets/createLessonModal/border.png");
+      cursor: pointer;
+    }
+    .default {
+      padding: 7px 12px;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+  }
+}
+
+.loadVideo {
+  background: rgba(240, 240, 240, 1);
+  height: max-content;
+  // height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+
+}
+.loadContainer {
+  max-height: 372px;
+  background: rgba(240, 240, 240, 1);
+  border-radius: 10px;
+}
+.placeholderContainer {
+  height: 205px;
+  border-radius: 10px;
+}
+.placeholderContainer.dragActive {
+  background: $gradient_color; /* Подсветка зоны при наведении */
+  border-color: #009688;
+  color: white;
+}
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-align: center;
+}
+.loadVideo.dragActive {
+  background: $gradient_color; /* Подсветка зоны при наведении */
+  border-color: #009688;
+  color: white;
+}
+.videoContainer {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  video {
+    height: 300px;
+    // height: 300px;
+    margin-top: 0;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+  .videoName {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 8px 0px 0px 0px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .fileInfo {
+    margin: 0;
+    width: 100%;
+  }
+  .fileSize {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .changeVideo {
+    border: none;
+    padding: 0;
+    background: rgba(217, 217, 217, 1);
+    border-radius: 10px;
+    cursor: pointer;
+    div {
+      padding: 10px 0px;
+      display: flex;
+      gap: 10px;
+      margin: 0px 10px;
+      color: black;
+      font-family: $primary_font;
+      font-size: 16px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 630px) {
+  .mainBlock{
+    width: calc(100% - 20px);
+  }
+
+  .adaptiveBlock {
+    display: flex;
+    gap: 10px;
+  }
+  .inputNameVideoContainer {
+    width: calc(100% - 30px);
+  }
+  .voiceTranslateContanier {
+    flex-direction: column;
+    .select {
+      width: max-content;
+      justify-content: center;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .mainBlock {
+    gap: 20px;
+    height: 80%;
+  }
+}

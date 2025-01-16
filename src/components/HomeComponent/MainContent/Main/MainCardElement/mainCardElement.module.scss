@@ -1,0 +1,182 @@
+@import "/src/app/styles/variables";
+
+.wrapper {
+  width: 100%;
+  max-height: 915px;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  padding: 30px;
+  box-shadow: 1.02px 2.03px 10.17px 0px #142f8840;
+  border-radius: 30px;
+  font-family: $primary_font;
+}
+
+.imageContainer {
+  position: relative;
+  margin-bottom: 15px;
+  .img_lesson {
+    width: 100%;
+    // max-height: 202.5px;
+    border-radius: 20px;
+    position: relative;
+    object-fit: cover;
+    // aspect-ratio: 1 / 1;
+  }
+  .button_play {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &:hover {
+      cursor: pointer;
+    }
+    img {
+      width: 60px;
+      height: 65px;
+    }
+  }
+
+  .time_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    bottom: 20px;
+    right: 20px;
+    max-height: 20px;
+    padding: 10px 15px;
+    max-width: 95px;
+    .time_lessons {
+      font-size: 28px;
+      background-image: linear-gradient(
+        0deg,
+        #05ad25 2.96%,
+        #0294a1 42.48%,
+        #181381 82%
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 600;
+    }
+  }
+}
+
+.titleBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  .title {
+    font-size: 48px;
+    line-height: 43px;
+    margin: 0;
+  }
+  .shareButton {
+    outline: none;
+    border: none;
+    background: transparent;
+    .img_share {
+      width: 8px;
+    }
+  }
+}
+
+.date {
+  color: #838382;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.description {
+  margin: 5px 0px 28px 0px;
+  max-width: 800px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  color: #3a3a38;
+}
+
+.profileContainer {
+  display: flex;
+  justify-content: space-between;
+  .profileBlock {
+    display: flex;
+    gap: 20px;
+    .round {
+      display: flex;
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      background: #d9d9d9;
+    }
+    .profile {
+      .profileName {
+        margin: 0;
+        color: #3a3a38;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 56px;
+      }
+      .counters {
+        display: flex;
+        gap: 25px;
+        span {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 25px;
+          line-height: 36px;
+          .img_view_com {
+            width: 28px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.buyBtn {
+  font-family: $primary_font;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: $gradient_color;
+  border: none;
+  max-width: 360px;
+  width: 100%;
+  height: 86px;
+  border-radius: 15px;
+  gap: 15px;
+  transition: 0.3s all;
+  position: relative;
+  color: white;
+  font-size: 32px;
+  line-height: 43px;
+  padding: 0;
+  span {
+    margin-left: 32px;
+  }
+  img {
+    position: absolute;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+  }
+
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+}

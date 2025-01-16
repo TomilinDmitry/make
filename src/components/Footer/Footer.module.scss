@@ -1,0 +1,186 @@
+@import "/src/app/styles/variables";
+
+.wrapper {
+  width: calc(100vw - 0.313vw);
+  height: 3.906vw;
+  background: $gradient_color;
+  border-radius: 0.781vw 0.781vw 0px 0px;
+  position: fixed;
+  bottom: 0;
+  .container {
+    padding: 0.521vw 2.083vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: $primary_font;
+    align-items: center;
+    color: white;
+
+    .leftSide {
+      display: flex;
+      flex-direction: column;
+  
+      .nameCompany {
+        font-size: 0.729vw;
+        font-weight: 500;
+        color: white;
+      }
+      .bin {
+        color: #ffffff6b;
+        font-weight: 500;
+        font-size: 0.625vw;
+      }
+      .rights {
+        font-weight: 500;
+        font-size: 0.625vw;
+        line-height: 0.677vw;
+      }
+    }
+    // left End
+
+    //Center
+    .centerBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 2.604vw;
+      .emailBlock {
+        display: flex;
+        align-items: center;
+        gap: 0.521vw;
+        // margin-bottom: 10px;
+        height: 100%;
+      }
+      a {
+        cursor: pointer;
+        .email {
+          height: 100%;
+          font-size: 1.25vw;
+          font-weight: 500;
+          border: none;
+          outline: none;
+          background: transparent;
+          color: white;
+          cursor: pointer;
+          padding: 0;
+        }
+      }
+      .icons {
+        display: flex;
+        gap: 0.521vw;
+        img {
+          width: 2.083vw;
+          height: 2.083vw;
+        }
+      }
+    }
+    //Center End
+
+    .rightSide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      button {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: white;
+        text-align: right;
+        font-size: 0.729vw;
+        font-weight: 500;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1920px) {
+  .wrapper {
+    width: calc(100vw - 6px);
+    height: 75px;
+    background: $gradient_color;
+    border-radius: 15px 15px 0px 0px;
+    position: fixed;
+    bottom: 0;
+    .container {
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      font-family: $primary_font;
+      align-items: center;
+      color: white;
+      // left
+      .leftSide {
+        display: flex;
+        flex-direction: column;
+        .nameCompany {
+          font-size: 14px;
+          font-weight: 500;
+          color: white;
+        }
+        .bin {
+          color: #ffffff6b;
+          font-weight: 500;
+          font-size: 12px;
+        }
+        .rights {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 13px;
+        }
+      }
+      // left End
+
+      //Center
+      .centerBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50px;
+        .emailBlock {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          height: 100%;
+        }
+        a {
+          cursor: pointer;
+          .email {
+            height: 100%;
+            font-size: 24px;
+            font-weight: 500;
+            border: none;
+            outline: none;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            padding: 0;
+          }
+        }
+        .icons {
+          display: flex;
+          gap: 10px;
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+      //Center End
+
+      .rightSide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        button {
+          cursor: pointer;
+          border: none;
+          outline: none;
+          background: transparent;
+          color: white;
+          text-align: right;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "/src/app/styles/variables";
+
+.conditions {
+  display: flex;
+//   align-items: center;
+//   width: 100%;
+//   border-radius: 10px;
+//   padding: 5px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 10px 0px 0px;
+}
+.conditionsInput {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  height: 28px;
+  padding: 0px;
+  padding-left: 10px;
+  font-size: 14px;
+  ::placeholder {
+    font-family: $primary_font;
+  }
+}
+.condition {
+  display: flex;
+  width: 100%;
+  background: rgba(240, 240, 240, 1);
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px;
+  max-width: 526px;
+}
+.imageGroup {
+  display: flex;
+  gap: 5px;
+  .plus {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,67 @@
+@import "/src/app/styles/variables";
+
+.error_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 86.8vh;
+  background-image: url("../../app/assets/profileCard/profile_top.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title {
+  font-family: $primary_font;
+  font-size: 2rem;
+  background-size: 100%;
+  background-image: $gradient_color;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-family: $primary_font;
+  font-size: 1.3rem;
+  color: $black_color;
+  text-align: center;
+}
+.button {
+  font-family: $primary_font;
+  font-size: 1.3rem;
+  background-size: 100%;
+  background-image: $gradient_color;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.face {
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (width <= 425px) {
+  .face {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .error_container {
+    height: 100%;
+    margin-top: 25%;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,402 @@
+@import "/src/app/styles/variables";
+
+.profile_box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 16.034vw;
+  height: auto;
+  width: 100%;
+  bottom: 11.458vw;
+  left: 2.083vw;
+  border-radius: 1.042vw;
+  box-shadow: 2px 4px 10px 0px rgba(25, 18, 129, 0.25);
+  margin-bottom: 2.084vw;
+}
+.loadImage {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.box_name_mobile {
+  display: none;
+}
+
+.profile_img_box {
+  height: 16.034vw;
+  width: 16.034vw;
+}
+.img_me {
+  max-width: 16.034vw;
+  width: 100%;
+  max-height: 16.034vw;
+  height: 100%;
+}
+.username_box {
+  z-index: 10;
+  text-align: start;
+  position: absolute;
+  top: 0px;
+  left: 18.2vw;
+  width: 41.65vw;
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 1.042vw;
+  width: 100%;
+  font-size: 4.165vw;
+  font-family: $secondary_font;
+  font-weight: 700;
+  line-height: 4.165vw;
+  margin: 0;
+  color: rgba(255, 255, 255, 1);
+  .usernameLang {
+    display: flex;
+    gap: 10px;
+  }
+}
+.containerInfo {
+  padding: 1.042vw 0.526vw;
+  p {
+    margin: 0;
+  }
+}
+.box_loc_vid_view {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.781vw;
+  margin-bottom: 0.781vw;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.526vw;
+  font-family: $primary_font;
+  font-weight: 500;
+  img {
+    width: 0.885vw;
+    height: 1.25vw;
+  }
+}
+.locationText {
+  font-size: 0.833vw;
+  line-height: 1.562vw;
+  font-weight: 500;
+}
+
+.videos_view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2.3426vw;
+  max-height: 1.2494vw;
+  img {
+    width: 1.458vw;
+    height: 1.094vw;
+  }
+}
+
+.vid_see {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.526vw;
+  font-size: 0.833vw;
+  font-family: $primary_font;
+  font-weight: 400;
+}
+
+.buttonsContainerUserProfile {
+  display: flex;
+  flex-direction: column;
+  max-width: 15vw;
+  width: 100%;
+  gap: 0.52vw;
+  margin-bottom: 1.3vw;
+
+  .usersSocialButton {
+    font-family: $primary-font;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 0.36vw;
+    align-items: center;
+    max-width: 15.52vw;
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 1.875vw;
+    border-radius: 1.3vw;
+    box-shadow: 1px 2px 25px 0px #142f8840;
+    background-image: linear-gradient(
+      89.45deg,
+      #05ad25 0.48%,
+      #0294a1 73.77%,
+      #181381 147.06%
+    );
+
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0px;
+    font-weight: 500;
+    font-size: 0.83vw;
+    line-height: 1.41vw;
+    img {
+      width: 0.885vw;
+      height: 0.833vw;
+    }
+  }
+  .subscribe {
+    font-family: $primary-font;
+    height: 2.19vw;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 0.83vw;
+    font-weight: 500;
+    background: linear-gradient(
+      89.45deg,
+      #05ad25 0.48%,
+      #0294a1 73.77%,
+      #181381 147.06%
+    );
+    width: 100%;
+    padding: 0px;
+    border-radius: 1.3vw;
+    color: white;
+  }
+  .notAuthSubscribe {
+    @extend .subscribe;
+    cursor: not-allowed;
+    background: rgb(196, 196, 196);
+  }
+  .isSubscribed {
+    height: 2.19vw;
+    font-family: $primary-font;
+    box-shadow: 1px 2px 25px 0px #142f8840;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 0.83vw;
+    font-weight: 500;
+    background: white;
+    width: 100%;
+    padding: 0px;
+    border-radius: 1.3vw;
+    color: white;
+    background-image: linear-gradient(
+      89.45deg,
+      #05ad25 0.48%,
+      #0294a1 73.77%,
+      #181381 147.06%
+    );
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.info_me {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.title_me {
+  font-family: $primary_font;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 600;
+  margin: 0;
+  font-size: 0.94vw;
+  margin-bottom: 0.26vw;
+  line-height: 1.56vw;
+}
+
+.text_me {
+  font-family: $primary_font;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-size: 0.83vw;
+  max-width: 18.23vw;
+  width: 100%;
+  word-break: break-word;
+}
+.description {
+  width: 100%;
+  height: 7.34vw;
+  border-radius: 0.52vw;
+  background: rgba(240, 240, 240, 1);
+  resize: none;
+  outline: none;
+  border: none;
+  padding: 0.78vw 1.04vw;
+}
+.textareaContainer {
+  max-width: 11.98vw;
+  max-height: 8.9vw;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1920px) {
+  .profile_box {
+    max-width: 308px;
+    height: auto;
+    width: 100%;
+    bottom: 90px;
+    left: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 10px 0px rgba(25, 18, 129, 0.25);
+    margin-bottom: 40px;
+  }
+
+  .profile_img_box {
+    height: 308px;
+    width: 308px;
+  }
+  .img_me {
+    max-width: 308px;
+    width: 100%;
+    max-height: 308px;
+    height: 100%;
+  }
+  .username_box {
+    top: 14px;
+    left: 360px;
+    width: 800px;
+  }
+
+  .username {
+    gap: 0px;
+    width: 100%;
+    font-size: 3.167vw;
+    line-height: 75px;
+    margin: 0;
+  }
+  .containerInfo {
+    padding: 10px;
+    p {
+      margin: 0;
+    }
+  }
+  .box_loc_vid_view {
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .location {
+    gap: 5px;
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .locationText {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .videos_view {
+    gap: 10px;
+    max-height: 24px;
+    img {
+      width: 18px;
+      height: 15px;
+    }
+  }
+
+  .vid_see {
+    gap: 5px;
+    font-size: 14px;
+    font-family: $primary_font;
+    font-weight: 400;
+  }
+
+  .buttonsContainerUserProfile {
+    max-width: 288px;
+    width: 100%;
+    gap: 5px;
+    margin-bottom: 5px;
+    .usersSocialButton {
+      gap: 5px;
+      max-width: 298px;
+      width: 100%;
+      height: 30px;
+      border-radius: 25px;
+      box-shadow: 1px 2px 25px 0px #142f8840;
+      font-size: 14px;
+      line-height: 27px;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 100%;
+      }
+      img {
+        width: auto;
+        height: auto;
+      }
+    }
+    .subscribe {
+      height: 30px;
+      font-size: 14px;
+      font-weight: 500;
+      width: 100%;
+      padding: 0px;
+      border-radius: 25px;
+    }
+    .isSubscribed {
+      height: 30px;
+      box-shadow: 1px 2px 25px 0px #142f8840;
+      font-size: 14px;
+      font-weight: 500;
+      width: 100%;
+      padding: 0px;
+      border-radius: 25px;
+    }
+  }
+
+  .title_me {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    line-height: 30px;
+  }
+
+  .text_me {
+    font-size: 14px;
+    max-width: 350px;
+    width: 100%;
+  }
+  .description {
+    width: 100%;
+    height: 141px;
+    border-radius: 10px;
+    padding: 15px 20px;
+  }
+  .textareaContainer {
+    max-width: 230px;
+    width: 100%;
+    max-height: 171px;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .username {
+    font-size: 4.167vw;
+  }
+}

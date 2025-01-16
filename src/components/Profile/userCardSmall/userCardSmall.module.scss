@@ -1,0 +1,112 @@
+@import "../../../app/styles/variables";
+
+.wrapper {
+  display: flex;
+  font-family: $primary-font;
+}
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.leftSide {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.profilePhoto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  .name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .location {
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 400;
+    color: #505050;
+  }
+}
+
+.rightSide {
+  display: flex;
+  gap: 20px;
+  min-width: 110px;
+  justify-content: space-between;
+}
+
+.video {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  img {
+    width: 18px;
+    height: 15px;
+  }
+  .text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+.view {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  img {
+    width: 18px;
+    height: 18px;
+  }
+  .text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .profilePhoto {
+    width: 38px;
+    height: 38px;
+  }
+  .profileInfo {
+    .location {
+      font-size: 10px;
+      line-height: 13px;
+    }
+  }
+
+  .rightSide {
+    gap: 20px;
+    min-width: 105px;
+  }
+
+  .video {
+    gap: 5px;
+    img {
+      width: 15px;
+      height: 15px;
+    }
+    .text {
+      font-size: 12px;
+    }
+  }
+  .view {
+    gap: 5px;
+    img {
+      width: 18px;
+      height: 14px;
+    }
+    .text {
+      font-size: 12px;
+    }
+  }
+}

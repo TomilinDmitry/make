@@ -1,0 +1,114 @@
+@import "/src/app/styles/variables";
+
+// Profile_all_container
+.profile_all_container {
+  position: relative;
+  top: -49px;
+  height: 100vh;
+  // overflow-x: hidden;
+}
+
+.profileContainer {
+  position: relative;
+  height: 200px;
+}
+.profile_top_img {
+  width: 99.7vw;
+  height: 142px;
+  z-index: 0;
+}
+.profileContainerMobile {
+  display: none;
+}
+.profile_top_img_mobile {
+  display: none;
+}
+// @media screen and (max-width: 1300px) {
+//   .profile_top_img_mobile {
+//     display: flex;
+//     width: 100%;
+//     height: 500px;
+//   }
+//   .profile_top_img {
+//     display: none;
+//   }
+// }
+// @media screen and (max-width: 850px) {
+//   // .profile_top_img {
+//   //   width: 99.3vw;
+//   //   z-index: 0;
+//   // }
+// }
+.bg {
+  position:fixed;
+  left: 0;
+  top: 0;
+  background: #e9e9e91e;
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+@media screen and (max-width: 850px) {
+  .profileContainer {
+    display: none;
+  }
+  .profile_top_img {
+    display: none;
+  }
+  .profile_top_img_mobile {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+  }
+  .profileContainerMobile {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0px 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .profileContainerMobile {
+
+    padding: 0px 15px;
+  }
+  .bg {
+    display: flex;
+    justify-content: center;
+    // height: calc(100% - 45px);
+    // background: white;
+    // position: fixed;
+  }
+  .profile_top_img_mobile {
+    display: flex;
+    width: 100%;
+    // height: 13vh;
+  }
+}
+//   .profileContainerMobile {
+//     display: inline;
+//     position: absolute;
+//     top: 56px;
+//     max-width: 100vw;
+//     width: 100%;
+//   }
+// }
+// @media screen and (max-width: 430px) {
+//   .profileContainerMobile {
+//     display: inline;
+//     position: absolute;
+//     top: 75px;
+//     // max-width: 91.9vw;
+//     width: 100%;
+//   }
+// }
+// @media screen and (max-width: 350px) {
+//   .profileContainerMobile {
+//     display: inline;
+//     position: absolute;
+//     top: 56px;
+//     max-width: 84vw;
+//     // width: 100%;
+//   }
+// }

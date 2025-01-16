@@ -1,0 +1,267 @@
+@import "../../../app/styles/variables";
+.container {
+  max-width: 16.034vw;
+  max-height: 17.7vw;
+  width: 100%;
+  height: 100%;
+}
+.loadImage {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.loadImageEdited {
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  cursor: pointer;
+}
+.box_name_mobile {
+  display: none;
+}
+
+.profile_img_box {
+  max-width: 16.034vw;
+  position: relative;
+}
+.img_me {
+  max-width: 16.034vw;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.3014vw;
+  transition: filter 0.3s ease;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.loadImage {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hoverBg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 410px;
+  max-height: 410px;
+  width: 100%;
+  height: 100%;
+  background: rgba(187, 187, 187, 0.5);
+  border-radius: 25px 25px 0px 0px;
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+.loadImageIcon {
+  position: absolute;
+  right: 1.042vw;
+  top: 1.042vw;
+  width: 2.084vw;
+  height: 2.084vw;
+}
+//
+.loadButton {
+  position: absolute;
+  width: 100%;
+  background: white;
+  color: black;
+  border: none;
+  outline: none;
+  padding: 10px;
+  bottom: 4px;
+  left: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1920px) {
+  .container {
+    max-width: 308px;
+    max-height: 340px;
+  }
+
+  .profile_img_box {
+    height: 340px;
+    width: 308px;
+  }
+
+  .img_me {
+    max-width: 308px;
+    max-height: 340px;
+    border-radius: 25px;
+  }
+
+  .img_meEdited {
+    width: 500px;
+    max-height: 440px;
+    height: 100%;
+    border-radius: 25px 25px 0px 0px;
+  }
+
+  .loadImageIcon {
+    right: 20px;
+    top: 20px;
+    width: 39px;
+    height: 39px;
+  }
+
+  .loadButton {
+    padding: 10px;
+    bottom: 4px;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    max-width: 130px;
+    max-height: 130px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .loadImage {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .loadImageEdited {
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .box_name_mobile {
+    display: none;
+  }
+
+  .profile_img_box {
+    height: 410px;
+    width: 410px;
+    position: relative;
+  }
+
+  .img_me {
+    max-width: 410px;
+    width: 100%;
+    max-height: 410px;
+    height: 100%;
+    border-radius: 25px 25px 0px 0px;
+    transition: filter 0.3s ease;
+    object-fit: cover;
+  }
+
+  .loadImageIcon {
+    display: none;
+  }
+
+  .img_me {
+    border-radius: 50%;
+    border: 5px solid white;
+    max-height: 410px;
+  }
+
+  .hoverBg {
+    display: flex;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+  }
+
+  .loadImage:hover .hoverBg {
+    opacity: 1;
+  }
+}
+// @media screen and (max-width: 570px) {
+//   .loadImage {
+//     display: flex;
+//     justify-content: center;
+//     position: relative;
+//     width: 340px;
+//     height: 320px;
+//   }
+
+//   .img_meEdited {
+//     max-height: 510px;
+//     max-width: 410px;
+//   }
+
+//   .hoverBg {
+//     width: 320px;
+//     height: 320px;
+//     left: 10px;
+//     top: 10px;
+//   }
+// }
+// @media screen and (max-width: 430px) {
+//   .container {
+//     max-height: 230px;
+//     top: 40px;
+//   }
+
+//   .loadImage {
+//     display: flex;
+//     justify-content: center;
+//     position: relative;
+//     height: 230px;
+//     width: 100%;
+//   }
+
+//   .img_me {
+//     max-height: 190px;
+//     max-width: 190px;
+//   }
+
+//   .hoverBg {
+//     left: 65px;
+//     top: 10px;
+//     max-height: 190px;
+//     max-width: 190px;
+//   }
+// }
+// @media screen and (max-width: 400px) {
+//   .container {
+//     display: flex;
+//     justify-content: center;
+//     top: 40px;
+//     max-width: 360px;
+//   }
+
+//   .loadImage {
+//     display: flex;
+//     justify-content: center;
+//     position: relative;
+//     height: 230px;
+//   }
+
+//   .img_me {
+//     max-height: 190px;
+//     max-width: 190px;
+//   }
+
+//   .hoverBg {
+//     left: 65px;
+//     top: 10px;
+//   }
+// }

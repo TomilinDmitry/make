@@ -1,0 +1,186 @@
+@import "../../../app/styles/variables";
+.wrapper {
+  max-width: 100%;
+  height: auto;
+  font-family: $primary_font;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    .photoWithBtn {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-width: none;
+      }
+      position: relative;
+
+      .signUp {
+        position: absolute;
+        right: 1vw;
+        bottom: 1vw;
+        background: linear-gradient(
+          90deg,
+          #09af25 0%,
+          #0393a0 52.5%,
+          #251885 100%
+        );
+        width: 35%;
+        font-size: 0.729vw;
+        font-weight: 700;
+        padding: 0px;
+        height: 1.875vw;
+        color: white;
+        border: none;
+        border-radius: 4vw;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      .title {
+        color: black;
+        margin: 0;
+        font-weight: 600;
+        font-size: 1vw;
+        line-height: 1.5vw;
+      }
+      .description {
+        color: rgba(130, 130, 130, 1);
+        font-weight: 500;
+        font-size: 0.7vw;
+        line-height: 1vw;
+        margin-bottom: 1vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    .container {
+      .photoWithBtn {
+        .signUp {
+          max-width: 9vw;
+          height: 2vw;
+          width: 100%;
+          font-size: 1.4vw;
+        }
+      }
+      .info {
+        .title {
+          font-size: 1.3vw;
+        }
+        .description {
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .wrapper {
+    .container {
+      .photoWithBtn {
+        .signUp {
+          max-width: 140px;
+          height: 3.5vw;
+          width: 100%;
+          font-size: 16px;
+          bottom: 1.5vw;
+        }
+      }
+      .info {
+        .title {
+          font-size: 1.8vw;
+          margin-bottom: 2px;
+          line-height: 2vw;
+        }
+        .description {
+          font-size: 1.5vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    .container {
+      .photoWithBtn {
+        .signUp {
+          max-width: 110px;
+          font-size: 14px;
+        }
+      }
+      .info {
+        .title {
+          font-size: 2.2vw;
+          margin-bottom: 2px;
+          line-height: 2.5vw;
+        }
+        .description {
+          font-size: 1.7vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    .container {
+      .photoWithBtn {
+        .signUp {
+          max-width: 27.5vw;
+          height: 6.7vw;
+          width: 100%;
+          font-size: 2.5vw;
+          bottom: 3.5vw;
+          right: 2.5vw;
+        }
+      }
+      .info {
+        .title {
+          font-size: 4.5vw;
+          margin-bottom: 5px;
+          line-height: 5vw;
+        }
+        .description {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .wrapper {
+    .container {
+      .photoWithBtn {
+        .signUp {
+          max-width: 27.5vw;
+          height: 6.7vw;
+          width: 100%;
+          font-size: 14px;
+          bottom: 3.5vw;
+          right: 2.5vw;
+        }
+      }
+      .info {
+        .title {
+          font-size: 4.5vw;
+          margin-bottom: 5px;
+          line-height: 5vw;
+        }
+        .description {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+}

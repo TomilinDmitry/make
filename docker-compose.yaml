@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
+      - '443:443'
+    restart: always
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt # Монтируем сертификаты Let's Encrypt

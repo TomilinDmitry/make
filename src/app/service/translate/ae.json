@@ -1,0 +1,246 @@
+{
+  "homePage": {
+    "lessonCounter": "الدروس",
+    "userCounter": "المستخدمون",
+    "mainText": "دُرُوسُ الْمَكِيَاجِ فِي أَيِّ مَكَانٍ فِي الْعَالَمِ عَلَى أَيِّ جِهَازٍ رَقْمِيٍّ وَبِاللُّغَةِ الْمُلَائِمَةِ"
+  },
+  "navigation": {
+    "myNews": {
+      "title": "أخباري",
+      "description": "الدروس والأحداث الخاصة بالأشخاص الذين أنت مشترك معهم"
+    },
+    "myManual": {
+      "title": "مستنداتي",
+      "description": "لوحة المعلومات التي تحتوي على الميزات والوثائق"
+    },
+    "mySupport": {
+      "title": "دعم المستخدم",
+      "description": "خدمة الدعم للمستخدمين"
+    },
+    "FAQ": {
+      "title": "الأسئلة المتكررة",
+      "description": "مجموعة من الأسئلة الشائعة عن أي موضوع وإجاباتها"
+    },
+    "footer": {
+      "publicOffer": "العرض العام",
+      "privacyPolicy": "سياسة الخصوصية",
+      "allRights": "جميع الحقوق محفوظة"
+    }
+  },
+  "burger": {
+    "user": "كن مستخدمًا",
+    "seller": "كن مؤلفًا",
+    "addProfile": "إضافة ملف تعريفي",
+    "logout": "تسجيل الخروج",
+    "viewer": "أنت زائر"
+  },
+  "lessonPage": {
+    "filter": {
+      "popular": "حسب الشعبية",
+      "date": "حسب تاريخ النشر"
+    },
+    "placeholder": "بحث",
+    "editButton": "تعديل",
+    "buyButton": "شراء",
+    "published": "تم النشر",
+    "shareMenu": {
+      "favourite": "أضف إلى المفضلة",
+      "unFavourite": "إزالة",
+      "share": {
+        "title": "مشاركة",
+        "message": "تم نسخ الرابط إلى الحافظة"
+      },
+      "notInteresting": {
+        "title": "غير مثير للاهتمام",
+        "lessonDelete": "تم حذف الدرس",
+        "Cancel": "إلغاء",
+        "tell": {
+          "title": "أخبرنا لماذا",
+          "description": "نحن نقدر ملاحظاتك حول سبب عدم اهتمامك بهذا الدرس وما الذي لم يعجبك",
+          "sendButton": "إرسال الطلب للمراجعة"
+        }
+      },
+      "complaint": "إبلاغ"
+    }
+  },
+  "userPage": {
+    "placeholderName": "بحث حسب الاسم",
+    "placeholderLocation": "بحث حسب الموقع",
+    "notFoundUser": "لم يتم العثور على المستخدمين"
+  },
+  "authorization": {
+    "login": {
+      "title": "تسجيل الدخول",
+      "forgot": "هل نسيت كلمة المرور؟",
+      "button": "تسجيل الدخول",
+      "withOutAccount": "ليس لديك حساب؟",
+      "registration": "تسجيل"
+    },
+    "registration": {
+      "title": "التسجيل",
+      "button": "تسجيل",
+      "withAccount": "هل لديك حساب بالفعل؟",
+      "login": "تسجيل الدخول"
+    },
+    "forgotPassword": {
+      "forgotPasswordText": "استعادة كلمة المرور"
+    },
+    "confirmEmail": {
+      "loading": "جاري تحميل البيانات",
+      "confirmEmailText": "",
+      "backOnMainPage": "العودة إلى الصفحة الرئيسية",
+      "notification": {
+        "error": "البريد الإلكتروني غير موجود. يرجى المحاولة مرة أخرى.",
+        "error2": "رابط التحقق انتهت صلاحيته، يرجى التحقق من بريدك الإلكتروني.",
+        "error3": "حدث خطأ أثناء إعادة إرسال رسالة التفعيل.",
+        "success": "تم تأكيد البريد الإلكتروني بنجاح!",
+        "successResend": "تم إعادة إرسال رسالة التأكيد بنجاح."
+      }
+    },
+    "notifications": {
+      "loginSuccess": "لقد سجلت الدخول بنجاح",
+      "loginError": "خطأ في تسجيل الدخول",
+      "registrationError": "لم توافق على معالجة البيانات الشخصية",
+      "passwordDontMatch": "كلمتا المرور غير متطابقتين",
+      "accountCreate": "تم إنشاء الحساب بنجاح، يرجى التحقق من بريدك الإلكتروني.",
+      "mailSend": "تم إرسال الرسالة إلى بريدك الإلكتروني.",
+      "sendAgain": "يمكنك إعادة إرسال الرسالة بعد",
+      "sendAgainSecond": "ثانية",
+      "sendAgainButton": "إعادة إرسال الرسالة"
+    }
+  },
+  "profile": {
+    "edit": "تعديل",
+    "save": "حفظ التغييرات",
+    "publish": "نشر",
+    "aboutMe": "عنّي",
+    "call": "اتصل",
+    "editProfileLabels": {
+      "name": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "number": "رقم الهاتف",
+      "location": "المدينة"
+    },
+    "navigation": {
+      "myLesson": "دروسي",
+      "access": "الوصول إلى الدروس",
+      "favouriteLessons": "الدروس المفضلة",
+      "myEvents": "أحداثي",
+      "subscribers": "المشتركون",
+      "subscriptions": "الاشتراكات",
+      "finance": "التمويل"
+    },
+    "skeleton": {
+      "noLessons": "لم يتم العثور على دروس",
+      "noAccessLessons": "لم يتم العثور على دروس يمكن الوصول إليها",
+      "noFavouriteLessons": "لم يتم العثور على دروس مفضلة"
+    }
+  },
+  "userProfile": {
+    "subscribe": "اشتراك",
+    "subscribed": "أنت مشترك",
+    "aboutMe": "عنّي",
+    "navigation": {
+      "lesson": "الدروس",
+      "events": "الأحداث",
+      "subscribers": "المشتركون",
+      "subscriptions": "الاشتراكات"
+    }
+  },
+  "player": {
+    "placeholder": "بحث",
+    "navigation": {
+      "favourite": "أضف إلى المفضلة",
+      "unFavourite": "إزالة",
+      "share": "مشاركة",
+      "complaint": "إبلاغ",
+      "subscribe": "اشتراك",
+      "subscribed": "أنت مشترك",
+      "comments": "التعليقات",
+      "placeholder": "اترك تعليقًا",
+      "send": "إرسال",
+      "replyBtn": "رد",
+      "replyText": "أدخل الرد",
+      "replyCancel": "إلغاء",
+      "replySend": "إرسال الرد",
+      "open": "فتح",
+      "close": "إغلاق",
+      "replies": "الردود"
+    }
+  },
+  "agreement": {
+    "text_1": "أوافق على",
+    "link_1": "معالجة بياناتي الشخصية",
+    "text_2": "و",
+    "link_2": "أوافق على شروط العرض"
+  },
+  "seller": {
+    "user": {
+      "fullAccess": "الوصول الكامل إلى جميع المواد على المنصة.",
+      "interaction": "التفاعل مع المعلمين.",
+      "access": "الوصول إلى مجتمع المستخدمين.",
+      "noPossibility": "لا يمكن تحميل وبيع دروسك الخاصة.",
+      "current": "خطتك الحالية"
+    },
+    "seller": {
+      "allPossibility": "جميع ميزات المستخدم.",
+      "scale": "إمكانية توسيع حجم التخزين مع نمو مجموعة الدروس وشعبيتك.",
+      "monetization": "الوصول الكامل إلى أدوات المنصة للترويج للمحتوى وتحقيق الدخل.",
+      "choice": "اختيار حجم التخزين للدروس.",
+      "sellDownload": "إمكانية تحميل وبيع دروسك الخاصة.",
+      "volume": "حجم البيانات المحملة على الموقع",
+      "quantity": "عدد الأشهر",
+      "seller": "الانتقال إلى البائع",
+      "month": "شهر",
+      "month_3": "أشهر",
+      "month_6": "أشهر"
+    }
+  },
+  "publishButton": {
+    "lesson": "نشر الدرس",
+    "event": "نشر الحدث",
+    "photo": "نشر الصورة"
+  },
+  "default": {
+    "name": "الاسم",
+    "lastName": "اللقب",
+    "city": "المدينة",
+    "country": "الدولة",
+    "mail": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "repeatPassword": "أعد إدخال كلمة المرور",
+    "Telegram": "تيليجرام",
+    "soon": "سيتم إضافة هذه الصفحة قريباً"
+  },
+  "myRequest": {
+    "title": "الدعم",
+    "navigation": {
+      "button_1": "الكل",
+      "button_2": "المفتوحة",
+      "button_3": "المغلقة",
+      "createRequest": "إنشاء طلب"
+    },
+    "table": {
+      "number": "الرقم",
+      "status": "الحالة",
+      "name": "الاسم",
+      "createDate": "تاريخ الإنشاء",
+      "updateDate": "تاريخ التحديث"
+    },
+    "request": {
+      "create": "إنشاء طلب",
+      "name": "أدخل الاسم*",
+      "lastName": "أدخل اسم العائلة*",
+      "number": "أدخل رقم الهاتف*",
+      "text": "نص الطلب",
+      "file": "اسحب الملفات أو اضغط الزر أدناه لاختيارها من الجهاز",
+      "selectFile": "اختيار ملف",
+      "next": "التالي"
+    },
+    "chat": {
+      "title": "الدردشة مع الدعم",
+      "placeholder": "اكتب رسالة",
+      "send": "إرسال"
+    }
+  }
+}

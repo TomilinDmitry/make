@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+// COLORS
+$primary_color: #ffffff;
+$secondary_color: #038b89;
+$links_color: rgba(2, 151, 144, 1);
+$black_color: #000000;
+$gradient_color: linear-gradient(
+  89.45deg,
+  #05ad25 0.48%,
+  #0294a1 73.77%,
+  #181381 147.06%
+);
+$gradient_border_color: linear-gradient(
+    to right,
+    #05ac2e 0%,
+    #0294a1 48%,
+    #181381 100%
+  )
+  1;
+
+// FONTS
+$primary_font: "Manrope", sans-serif;
+$secondary_font: "Jost", sans-serif;

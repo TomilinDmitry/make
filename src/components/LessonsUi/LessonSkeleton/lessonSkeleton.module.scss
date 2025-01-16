@@ -1,0 +1,65 @@
+.wrapper {
+  display: flex;
+  gap: 10px; // Расстояние между элементами скелетона
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 36px;
+  background-image: linear-gradient(
+    33.93deg,
+    #05ad25 2.96%,
+    #0294a1 42.48%,
+    #181381 82%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container {
+  display: flex;
+  gap: 10px;
+  filter: blur(10px);
+  width: 100%;
+}
+.skeletonElement {
+  height: 200px;
+  width: 100%;
+  background-color: #e0e0e0; // Серый цвет для скелетона
+  border-radius: 8px; // Радиус углов
+  overflow: hidden;
+  position: relative;
+
+  // Анимация "пульсации" для скелетона
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    animation: loading 1.5s infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}

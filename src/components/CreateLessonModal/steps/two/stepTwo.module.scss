@@ -1,0 +1,124 @@
+@import "/src/app/styles/variables";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  max-width: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text {
+  color: #909090;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+.hiddenFileInput {
+  display: none;
+}
+
+.customFileInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 1.042vw 0px 1.042vw;
+  text-align: center;
+  height: 15.625vw;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 2.604vw;
+  img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1.042vw;
+  }
+  .text {
+    margin-bottom: 0.521vw;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .file {
+    background-image: $gradient_color;
+    font-family: $primary_font;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+.loadingContainer {
+  width: 100%;
+  height: 15px; /* Высота полосы */
+  background-color: #e0e0e0; /* Цвет фона полосы */
+  border-radius: 10px; /* Скругление углов */
+  overflow: hidden;
+  position: relative;
+}
+.lessonText {
+  color: #909090;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.loadingText {
+  font-weight: 500;
+  color: #909090;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.loadingBar {
+  height: 100%;
+  width: 0%; /* Начальная ширина */
+  background: linear-gradient(
+    90deg,
+    #09af25 0%,
+    #0393a0 80.71%,
+    #251885 153.73%
+  );
+  /* Цвет полосы загрузки */
+}
+.loadingBarFull {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #09af25 0%,
+    #0393a0 80.71%,
+    #251885 153.73%
+  );
+}
+.loadingBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    align-items: flex-start;
+    margin-top: 25px;
+    min-height: 45vh;
+  }
+  .container {
+    height: 100%;
+  }
+  .customFileInput {
+    height: 100%;
+    padding: 0;
+    .text {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}

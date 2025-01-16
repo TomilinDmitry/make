@@ -1,0 +1,324 @@
+@import "/src/app/styles/variables";
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    max-width: 52.083vw;
+    width: 100%;
+    height: calc(100vh - 5.208vw);
+    padding: 1.563vw;
+    background: white;
+    border-radius: 1.042vw;
+    .topBlock {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2.604vw;
+      h1 {
+        margin: 0;
+        font-size: 1.042vw;
+        line-height: 1.406vw;
+      }
+      img {
+        cursor: pointer;
+        width: 1.51vw;
+        height: 1.51vw;
+      }
+    }
+    .formContainer {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      height: calc(100% - 5.208vw);
+      .form {
+        display: flex;
+        flex-direction: column;
+        max-width: 27.917vw;
+        width: 100%;
+        gap: 0.521vw;
+        .input {
+          font-family: $primary_font;
+          max-width: 100%;
+          border-radius: 0.521vw;
+          padding: 0.911vw 0px 0.911vw 1.042vw;
+          max-height: 2.604vw;
+          border: none;
+          outline: none;
+          font-size: 0.833vw;
+          background: #f0f0f0;
+        }
+        .textarea {
+          border: none;
+          outline: none;
+          padding: 0.677vw 1.042vw 0px 1.042vw;
+          height: 8.906vw;
+          resize: none;
+          background: #f0f0f0;
+          border-radius: 0.521vw;
+          font-family: $primary_font;
+          font-size: 0.833vw;
+        }
+        .hiddenFileInput {
+          display: none; // Скрываем стандартный input
+        }
+
+        .customFileInput {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0.677vw 1.042vw 0px 1.042vw;
+          text-align: center;
+          height: 15.625vw;
+          cursor: pointer;
+          transition: background 0.3s;
+          margin-bottom: 2.604vw;
+          img {
+            width: 4.167vw;
+            height: 4.167vw;
+            margin-bottom: 1.042vw;
+          }
+          .text {
+            margin-bottom: 0.521vw;
+            font-size: 0.833vw;
+            line-height: 1.198vw;
+          }
+          .file {
+            background-image: $gradient_color;
+            font-family: $primary_font;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            font-size: 0.833vw;
+          }
+        }
+        .submitButton {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          height: 2.604vw;
+          width: 10.417vw;
+          background: $gradient_color;
+          font-family: $primary_font;
+          color: white;
+          border: none;
+          outline: none;
+          text-align: center;
+          border-radius: 0.521vw;
+          font-size: 1.042vw;
+          padding: 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.error {
+  color: red;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 1920px) {
+  .wrapper {
+    width: calc(100% - 80px);
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+      max-width: 1000px;
+      width: 100%;
+      height: calc(100vh - 100px);
+      padding: 30px;
+      background: white;
+      border-radius: 20px;
+      .topBlock {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        align-items: center;
+        h1 {
+          margin: 0;
+          font-size: 20px;
+          line-height: 27px;
+        }
+        img {
+          cursor: pointer;
+          width: 14px;
+          height: 14px;
+        }
+      }
+      .formContainer {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: calc(100% - 50px);
+        .form {
+          display: flex;
+          flex-direction: column;
+          max-width: 536px;
+          width: 100%;
+          gap: 10px;
+          .input {
+            font-family: $primary_font;
+            max-width: 100%;
+            border-radius: 10px;
+            padding: 17.5px 0px 17.5px 20px;
+            max-height: 5vh;
+            border: none;
+            outline: none;
+            background: #f0f0f0;
+          }
+          .textarea {
+            border: none;
+            outline: none;
+            padding: 13px 20px 0px 20px;
+            height: 15vh;
+            resize: none;
+            background: #f0f0f0;
+            border-radius: 10px;
+            font-family: $primary_font;
+          }
+          .hiddenFileInput {
+            display: none; // Скрываем стандартный input
+          }
+
+          .customFileInput {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 13px 20px 0px 20px;
+            text-align: center;
+            height: 220px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-bottom: 50px;
+            img {
+              width: 80px;
+              height: 80px;
+              margin-bottom: 20px;
+            }
+            .text {
+              margin-bottom: 10px;
+              font-size: 18px;
+              line-height: 23px;
+              width: 310px;
+            }
+            .file {
+              background-image: $gradient_color;
+              font-family: $primary_font;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              font-weight: 700;
+              font-size: 18px;
+            }
+          }
+          .submitButton {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 50px;
+            width: 200px;
+            background: $gradient_color;
+            font-family: $primary_font;
+            color: white;
+            border: none;
+            outline: none;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 0;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .error {
+    color: red;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// @media screen and (max-height: 600px) {
+// 	.wrapper {
+// 		width: calc(100% - 80px);
+// 		height: 100%;
+// 		position: relative;
+// 		display: flex;
+// 		justify-content: center;
+// 		align-items: center;
+// 		.container {
+// 			max-width: 1000px;
+// 			width: 100%;
+// 			height: 87vh;
+// 			padding: 30px;
+// 			background: white;
+// 			border-radius: 20px;
+// 			.topBlock {
+// 				margin-bottom: 2vh;
+// 			}
+// 		}
+// 	}
+// }
+@media screen and (max-width: 786px) {
+  .wrapper {
+    // align-items: flex-start;
+    // margin-top: 30px;
+    .container {
+      .formContainer {
+        .form {
+          .input {
+            font-size: 12px;
+          }
+          .textarea {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    // width: calc(100% - 30px);
+    width: 100%;
+    // height: 95%;
+    .container {
+      width: 100%;
+      border-radius: 0px;
+
+      height: calc(100% - 60px);
+      .formContainer {
+        // height: calc(100% - 15vh);
+        .form {
+          .submitButton {
+            width: 120px;
+            height: 30px;
+          }
+          .customFileInput {
+            height: 200px;
+            padding: 0px 0px;
+            img {
+              width: 50px;
+              height: 50px;
+            }
+            .text {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

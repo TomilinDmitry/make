@@ -1,0 +1,90 @@
+@import "./styles/variables";
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: $primary_font;
+  position: relative;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 800;
+}
+
+.overlay_auth {
+  position: fixed;
+  background-color: rgba(128, 128, 128, 0.205);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.header {
+  position: relative;
+}
+// .cookieForm {
+//   position: fixed;
+//   right: 10px;
+//   bottom: 10px;
+//   background: rgba(255, 255, 255, 1);
+//   box-shadow: 1px 1px 4px 0px rgba(37, 24, 133, 0.2);
+//   padding: 10px 15px;
+//   border-radius: 10px;
+//   font-size: 14px;
+//   z-index: 100;
+// }
+::-webkit-scrollbar {
+  width: 0.313vw;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(35, 154, 5, 0.518);
+  border-radius: 0.313vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 69, 173, 0.324);
+  border-radius: 0.313vw;
+}
+
+@media screen and (max-width: 1920px) {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(35, 154, 5, 0.518);
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: rgba(0, 69, 173, 0.324);
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .cookieForm {
+    bottom: 55px;
+    right: 0;
+  }
+}

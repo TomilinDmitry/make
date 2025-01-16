@@ -1,0 +1,184 @@
+@import "/src/app/styles/variables";
+
+.wrapper {
+  padding: 4.74vw 2.083vw 100px 2.083vw;
+  height: calc(100vh - 156px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    // height: 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .topBlock {
+      position: relative;
+      max-width: 95%;
+    }
+    .bigCardBlock {
+      display: flex;
+      overflow: hidden;
+      scroll-behavior: smooth;
+      gap: 0.52vw;
+      max-width: 100%;
+      height: 100%;
+      margin-bottom: 2.084vw;
+    }
+    .navButtonLeft {
+      padding: 0.5vw 0.6vw;
+      cursor: pointer;
+      position: absolute;
+      left: -1.5vw;
+      display: flex;
+      align-items: center;
+      top: 35%;
+      border: 1px solid rgba(225, 225, 225, 1);
+      outline: none;
+      height: 5vw;
+      border-radius: 0.8vw;
+      img {
+        width: 0.5vw;
+        height: 1.1vw;
+      }
+    }
+    .navButton {
+      padding: 0.5vw 0.6vw;
+      cursor: pointer;
+      position: absolute;
+      right: -1.5vw;
+      display: flex;
+      align-items: center;
+      top: 35%;
+      border: 1px solid rgba(225, 225, 225, 1);
+      outline: none;
+      height: 5vw;
+      border-radius: 0.8vw;
+      img {
+        width: 0.5vw;
+        height: 1.1vw;
+      }
+    }
+    .navigation {
+      margin-bottom: 25px;
+      max-width: 99vw;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      min-height: 40px;
+    }
+    .calendar {
+      margin-bottom: 25px;
+      max-width: 95%;
+    }
+    .smallCardEvent {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.52vw;
+      justify-content: center;
+
+      .card {
+        flex: 1 1 calc(20% - 0.52vw);
+        max-width: 20%;
+        min-width: 150px;
+      }
+    }
+  }
+}
+.wait {
+  width: calc(100vw - 6px);
+  height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $primary_font;
+  font-size: 22px;
+}
+@media screen and (max-width: 1920px) {
+  .wrapper {
+    padding: 91px 40px 100px 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 156px 20px 100px 20px;
+    .container {
+      .bigCardBlock {
+        gap: 10px;
+        margin-bottom: 40px;
+      }
+      .smallCardEvent {
+        .card {
+          flex: 1 1 calc(25% - 0.52vw);
+          max-width: 25%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  .wrapper {
+    .container {
+      // .bigCardBlock {
+      //   gap: 1.2vw;
+      // }
+      .navButton {
+        right: -25px;
+        height: 50px;
+        img {
+          width: 2.5vw;
+          height: 2.1vw;
+        }
+      }
+      .navButtonLeft {
+        left: -25px;
+        height: 50px;
+        img {
+          width: 2.5vw;
+          height: 2.1vw;
+        }
+      }
+      .smallCardEvent {
+        gap: 10px;
+        .card {
+          flex: 1 1 calc(50% - 10px);
+          max-width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    padding: 50px 20px;
+    .container {
+      .navButton {
+        right: -10px;
+        img {
+          width: 2.5vw;
+          height: 2.1vw;
+        }
+      }
+      .navButtonLeft {
+        left: -10px;
+        img {
+          width: 2.5vw;
+          height: 2.1vw;
+        }
+      }
+      .smallCardEvent {
+        margin-bottom: 100px;
+
+        .card {
+          flex: 1 1 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

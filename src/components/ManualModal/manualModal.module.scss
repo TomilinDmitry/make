@@ -1,0 +1,30 @@
+@import "/src/app/styles/variables";
+.wrapper {
+  display: flex;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  background: none;
+  background: #000000c9;
+  right: 0px;
+  top: 35px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  text-align: left;
+  gap: 10px;
+  font-size: 14px;
+  font-family: $primary_font;
+}
+.element {
+    font-size: 14px;
+    font-family: $primary_font;
+  &:hover {
+    color: #01919f;
+  }
+}

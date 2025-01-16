@@ -1,0 +1,254 @@
+@import "/src/app/styles/variables";
+
+// .wrapper {
+// 	margin-top: 10px;
+// }
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.042vw;
+}
+.about {
+  font-size: 0.625vw;
+  margin: 0px;
+}
+
+.title {
+  color: #0294a1;
+  font-size: 1.25vw;
+  font-weight: 600;
+  line-height: 1.719vw;
+  margin: 0px 0px 0.521vw 0px;
+}
+.stepsTitle {
+  font-size: 0.625vw;
+  font-weight: 500;
+  line-height: 0.833vw;
+}
+.stepsList {
+  margin: 0;
+  padding: 0px 0px 0px 1.302vw;
+  font-size: 0.625vw;
+  line-height: 0.833vw;
+}
+
+.stepsElement {
+  span {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  p {
+    margin: 0;
+    font-size: 16px;
+  }
+  ul {
+    margin: 0;
+    padding: 5px 0px 0px 25px;
+    font-size: 14px;
+    line-height: 16px;
+    li {
+      margin-bottom: 5px;
+    }
+  }
+  ol {
+    margin: 0;
+    padding: 0px 0px 0px 25px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  a {
+    background-image: $gradient_color;
+    font-family: $primary_font;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 0.052vw solid;
+    border-image-slice: 1;
+    border-image-source: $gradient_color;
+  }
+  figure {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    img {
+      padding: 10px 0px 5px 0px;
+      object-fit: contain;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+figure {
+  width: 100%;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: $primary_font;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 15px;
+    border-collapse: collapse;
+    font-weight: 600;
+    margin: 20px 0px;
+    // table-layout: fixed; // Фиксированный макет таблицы
+
+    // border: 1px solid #ddd;
+    box-shadow: 1px 2px 4px 0px rgba(24, 19, 129, 0.25);
+
+    td,
+    th {
+      padding: 10px;
+      border-right: 1px solid rgba(217, 217, 217, 1);
+      // border: 1px solid #ddd;
+    }
+    tr:first-child {
+      background: linear-gradient(
+        90deg,
+        #09af25 0%,
+        #0393a0 47.5%,
+        #251885 100%
+      );
+      color: white;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+    }
+    tr:last-child {
+      border: none;
+    }
+
+    tr {
+      border-bottom: 1px solid rgba(217, 217, 217, 1);
+    }
+
+    // Первая колонка
+    td:first-child,
+    th:first-child {
+      max-width: 100px;
+      white-space: nowrap; // Обрезает текст и запрещает перенос
+      overflow: hidden; // Обрезает лишний контент
+      text-overflow: ellipsis; // Добавляет троеточие для длинного текста
+      border-radius: 15px 0px 0px 0px;
+      border-right: 1px solid rgba(217, 217, 217, 1);
+    }
+    td:last-child,
+    th:last-child {
+      max-width: 200px;
+      // white-space: nowrap; // Обрезает текст и запрещает перенос
+      // overflow: hidden;    // Обрезает лишний контент
+      text-overflow: ellipsis; // Добавляет троеточие для длинного текста
+      border-radius: 0px 15px 0px 0px;
+      border: none;
+    }
+
+    // Вторая колонка
+    td:nth-child(2),
+    th:nth-child(2) {
+      max-width: 75px;
+      text-align: center;
+    }
+    td:nth-child(3),
+    th:nth-child(3) {
+      max-width: 75px;
+      text-align: center;
+    }
+    td:nth-child(4),
+    th:nth-child(4) {
+      max-width: 100px;
+      text-align: center;
+    }
+
+    // Чередование цветов строк
+
+    // Шапка таблицы
+    th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+  }
+}
+.table {
+  background: red;
+}
+
+@media screen and (max-width: 1920px) {
+  .wrapper {
+    // margin-top: 10px;
+    transition: 0.5s margin ease;
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .about {
+    font-size: 12px;
+    margin: 0px;
+  }
+
+  .title {
+    color: #0294a1;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+    margin: 0px 0px 20px 0px;
+  }
+  .stepsTitle {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  .stepsList {
+    margin: 0;
+    padding: 0px 0px 0px 25px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .stepsElement {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    a {
+      background-image: $gradient_color;
+      font-family: $primary_font;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-bottom: 1px solid;
+      border-image-slice: 1;
+      border-image-source: $gradient_color;
+    }
+    h3 {
+      margin: 0;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+    ol {
+      li {
+        strong {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .open {
+    margin-top: 300px;
+    transition: 0.5s margin ease;
+  }
+  .protection {
+    margin-top: 120px;
+    transition: 0.5s margin ease;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-top: 35px;
+  }
+}

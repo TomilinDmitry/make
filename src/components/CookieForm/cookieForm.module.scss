@@ -1,0 +1,38 @@
+@import "/src/app/styles/variables";
+.wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 1px 1px 4px 0px rgba(37, 24, 133, 0.2);
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  z-index: 100;
+}
+.none {
+  display: none;
+}
+.apply {
+  background: linear-gradient(
+    270deg,
+    #191281 0%,
+    #0092a0 53.5%,
+    #03ad1e 100%
+  );
+  color: white;
+  border: none;
+  outline: none;
+  height: 30px;
+  border-radius: 10px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: $primary_font;
+  span {
+    margin: 0px 20px;
+  }
+}

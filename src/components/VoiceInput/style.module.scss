@@ -1,0 +1,41 @@
+@import "/src/app/styles/variables";
+
+.searchName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 30px;
+  width: 100%;
+  width: 100%;
+  cursor: pointer;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0px 2px 16px 0px rgba(21, 19, 113, 0.25);
+}
+.vol {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+}
+.search_img {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 30px;
+}
+.inputName {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  // border-radius: 30px;
+  height: 30px;
+  width: 100%;
+  // padding-left: 60px;
+  font-size: 14px;
+  font-family: $primary_font;
+  font-weight: 400;
+  max-width: 79%;
+}

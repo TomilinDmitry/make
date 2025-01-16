@@ -1,0 +1,205 @@
+@import "../../../app/styles/variables";
+.wrapper {
+  width: 17.7vw;
+  height: 19.8vw;
+  background-size: cover;
+  background-image: url("../../../app/assets/events/eventCardPhoto.png");
+  background-size: cover;
+  border-radius: 0.625vw;
+
+  .container {
+    padding: 1.05vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15.7vw;
+    height: 17.7vw;
+    font-family: $primary_font;
+  }
+  .name {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.57vw;
+    line-height: 1.57vw;
+    color: white;
+  }
+
+  .title {
+    font-size: 1.3vw;
+    line-height: 1.85vw;
+    color: white;
+    margin: 0;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    .description {
+      margin: 0;
+      max-width: 7.5vw;
+      width: 100%;
+      font-size: 0.84vw;
+      line-height: 1vw;
+      font-weight: 700;
+      color: white;
+    }
+    .signUp {
+      font-family: $primary_font;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      background: linear-gradient(
+        90deg,
+        #09af25 0%,
+        #0393a0 52.5%,
+        #251885 100%
+      );
+      color: white;
+      font-size: 0.84vw;
+      line-height: 1vw;
+      font-weight: 700;
+      border-radius: 0.8vw;
+      max-width: 6.8vw;
+      padding: 0;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .wrapper {
+    .info {
+      .signUp {
+        font-size: 14px;
+        height: 36px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 20.7vw;
+    height: 22.8vw;
+    border-radius: 20px 20px 10px 10px;
+    .container {
+      padding: 1.05vw;
+      width: 17.7vw;
+      height: 20.5vw;
+      font-family: $primary_font;
+    }
+    .name {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.9vw;
+      line-height: 1.9vw;
+      color: white;
+    }
+
+    .title {
+      font-size: 1.5vw;
+      line-height: 1.85vw;
+      color: white;
+      margin: 0;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      .description {
+        margin: 0;
+        max-width: 8.5vw;
+        width: 100%;
+        font-size: 1vw;
+        line-height: 1.4vw;
+        font-weight: 700;
+        color: white;
+      }
+      .signUp {
+        color: white;
+        font-size: 1.2vw;
+        line-height: 1vw;
+        max-width: 9vw;
+        height: 2.5vw;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .wrapper {
+    width: 25.7vw;
+    height: 27.8vw;
+    .container {
+      padding: 1.15vw;
+      width: 22.7vw;
+      height: 25.5vw;
+    }
+    .name {
+      font-size: 2.5vw;
+      line-height: 2.5vw;
+    }
+
+    .title {
+      font-size: 2vw;
+      line-height: 2.2vw;
+      color: white;
+      margin: 0;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      .description {
+        max-width: 10.5vw;
+
+        font-size: 1.2vw;
+        line-height: 1.5vw;
+      }
+      .signUp {
+        font-size: 1.4vw;
+        line-height: 1vw;
+        max-width: 11vw;
+        height: 2.5vw;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .wrapper {
+    width: 45.7vw;
+    height: 47.8vw;
+    .container {
+      padding: 2.15vw;
+      width: 41.5vw;
+      height: 43.5vw;
+    }
+    .name {
+      font-size: 4.5vw;
+      line-height: 4.5vw;
+    }
+
+    .title {
+      font-size: 4vw;
+      line-height: 5.2vw;
+      color: white;
+      margin: 0;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .description {
+        max-width: 20.5vw;
+        font-size: 2.2vw;
+        line-height: 2.5vw;
+      }
+      .signUp {
+        font-size: 2.4vw;
+        line-height: 1vw;
+        max-width: 17vw;
+        height: 4.5vw;
+      }
+    }
+  }
+}

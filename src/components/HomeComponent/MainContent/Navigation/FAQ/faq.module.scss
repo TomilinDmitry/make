@@ -1,0 +1,120 @@
+@import "/src/app/styles/variables";
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 59.167vw;
+  width: 100%;
+  .title {
+    margin: 0;
+    color: #0294a1;
+    font-size: 1.25vw;
+    line-height: 1.667vw;
+    font-weight: 600;
+    margin-bottom: 1.563vw;
+  }
+  .elementBlock {
+    background: rgba(246, 246, 246, 1);
+    border-radius: 10px;
+  }
+  .element {
+    display: flex;
+    border: none;
+    outline: none;
+    text-align: left;
+    background: #f6f6f6;
+    height: 2.5vw;
+    font-size: 0.625vw;
+    font-weight: 600;
+    font-family: $primary_font;
+    padding: 0px;
+    padding: 0px 1.042vw;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    .arrowDown {
+      transform: rotate(180deg);
+      transition: 0.5s transform ease;
+    }
+    .arrowUp {
+      transform: rotate(0deg);
+      transition: 0.5s transform ease;
+    }
+  }
+  .text {
+    padding: 0px 1.042vw;
+    margin: 0;
+    font-size: 0.625vw;
+    font-weight: 400;
+    background: #f6f6f6;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    // margin-top: 10px;
+    gap: 10px;
+    max-width: 1136px;
+    width: 100%;
+    .title {
+      margin: 0;
+      color: #0294a1;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .element {
+      display: flex;
+      border: none;
+      outline: none;
+      text-align: left;
+      background: transparent;
+      height: 48px;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: $primary_font;
+      padding: 0px;
+      width: 100%;
+      justify-content: space-between;
+      cursor: pointer;
+      align-items: center;
+      span {
+        color: black;
+        font-size: 14px;
+        padding: 0px 16px;
+      }
+      .arrowDown {
+        transform: rotate(180deg);
+        transition: 0.5s transform ease;
+        padding: 0px 20px;
+      }
+      .arrowUp {
+        transform: rotate(0deg);
+        transition: 0.5s transform ease;
+        padding: 0px 20px;
+      }
+    }
+    .text {
+      // padding: 0px 20px;
+      margin: 0;
+      font-size: 14px;
+      font-weight: 400;
+      background: #f6f6f6;
+      color: black;
+      padding: 0px 0px 16px 0px;
+      border-radius: 10px;
+    }
+    .responseText {
+      p {
+        margin: 0;
+        padding-left: 16px;
+      }
+      figure{
+        margin: 0;
+      }
+    }
+  }
+}

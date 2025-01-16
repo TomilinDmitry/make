@@ -1,0 +1,1204 @@
+@import "/src/app/styles/variables";
+
+// All lessons box
+.wrapperCustomSelect {
+  width: 100%;
+  max-height: 2.1vw;
+  border-radius: 1.302vw;
+  box-shadow: 1px 2px 10px 0px #19128140;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom_select {
+  border: none;
+  outline: none;
+  background-image: $gradient_color;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: $primary_font;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.833vw;
+  width: 100%;
+  height: 2.1vw;
+}
+.active {
+  color: white;
+  background: linear-gradient(
+    90deg,
+    #09af25 0%,
+    #0393a0 47.5%,
+    #251885 100%
+  );
+  // padding: 5px 10px;
+  border-radius: 1.302vw;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: white;
+}
+.filter_block {
+  display: flex;
+  margin-top: 4.1vw;
+  width: 100%;
+  // max-width: 1920px;
+}
+.search_filter {
+  display: flex;
+  // max-width: 1300px;
+  width: 100%;
+  justify-content: space-between;
+  margin: 1.355vw 0px;
+}
+.selectContainer {
+  text-align: left;
+  position: relative;
+  span {
+    background-image: $gradient_color;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: $primary_font;
+  }
+}
+.inputContainer {
+  max-width: 22.22vw;
+  width: 100%;
+}
+
+.lessons_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 2.083vw;
+}
+
+.filter {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  background-image: $gradient_color;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: $primary_font;
+  // font-size: 1.3rem;
+  cursor: pointer;
+  position: relative;
+  max-width: 22.22vw;
+  align-items: center;
+  width: 100%;
+}
+
+.img_filter {
+  max-width: 22px;
+  max-height: 22px;
+  width: 100%;
+  height: 100%;
+}
+
+// Search
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 2.1vw;
+  max-width: 22.22vw;
+  width: 100%;
+}
+
+.vol {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 2.1vw;
+  height: 2.1vw;
+}
+
+.search_img {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  width: 2.1vw;
+  height: 2.1vw;
+}
+
+.input {
+  border: none;
+  box-shadow: 0px 2px 16px 0px rgba(21, 19, 113, 0.25);
+  // max-width: 677px;
+  width: 100%;
+  border-radius: 1.57vw;
+  height: 2vw;
+  padding-left: 3.13vw;
+  font-size: 0.833vw;
+  font-family: $primary_font;
+  font-weight: 400;
+}
+
+// One lesson box
+
+.all_lessons_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.521vw;
+  justify-content: center;
+}
+
+.lesson {
+  flex: 1 1 calc(20% - 0.521vw);
+  max-width: 20%;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img_lesson {
+  // max-width: 368.8px;
+  width: 100%;
+  // height: 10.547vw;
+  border-radius: 1.04113vw;
+  position: relative;
+}
+.blackPhoto {
+  height: 7.79vw;
+  border-radius: 20px;
+  position: relative;
+  background: rgba(212, 212, 212, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26.5px 0px;
+  box-shadow: 1px 2px 10px 0px #15137140;
+}
+.text {
+  color: #000000;
+}
+.back {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.833vw;
+  font-family: $primary_font;
+  line-height: 1.875vw;
+  font-weight: 500;
+  padding: 0px 0.625vw;
+  cursor: pointer;
+  color: #0393a0;
+
+  &:hover {
+    background: $gradient_color;
+    border-radius: 1.823vw;
+    color: white;
+  }
+}
+.addBlackList {
+  @extend .back;
+}
+
+.lessonBlacklist {
+  flex: 1 1 calc(20% - 0.521vw);
+  max-width: 20%;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // border: 1px solid;
+  border-radius: 18px;
+}
+
+.button_play {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    cursor: pointer;
+  }
+  img {
+    width: 1.5vw;
+    height: 1.6vw;
+  }
+}
+
+.imageContainer {
+  position: relative;
+  margin-bottom: 0.521vw;
+}
+
+// Info
+
+.time_lessons {
+  background-image: linear-gradient(
+    33.93deg,
+    #05ad25 2.96%,
+    #0294a1 42.48%,
+    #181381 82%
+  );
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 0.833vw;
+  font-family: $primary_font;
+  border-radius: 0.261vw;
+  padding: 1px;
+}
+
+.time_box {
+  border-radius: 0.261vw;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  bottom: 0.731vw;
+  right: 0.521vw;
+  max-height: 1.04113vw;
+  height: 100%;
+  max-width: 2.35vw;
+  width: 100%;
+}
+
+.name_les_btn_share {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.04113vw;
+  position: relative;
+}
+
+.name_les {
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+  font-size: 0.94vw;
+  margin-bottom: 0.157vw;
+  font-family: $primary_font;
+}
+
+.btn_share {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.img_share {
+  width: 0.21vw;
+  height: 0.834vw;
+  cursor: pointer;
+}
+
+.date {
+  color: rgba(131, 131, 130, 1);
+  margin: 0;
+  line-height: 0.7vw;
+  margin-bottom: 3px;
+  font-size: 0.833vw;
+}
+
+.info {
+  width: 100%;
+  text-align: left;
+  font-size: 0.833vw;
+  color: rgba(58, 58, 56, 1);
+  margin: 0;
+  // margin-bottom: 13px;
+  line-height: 0.835vw;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.26vw;
+  min-height: 1.719vw;
+}
+
+// Channel styles
+
+.channel_box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  a {
+    color: black;
+  }
+}
+
+// Box styles img star view comment
+
+.channel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.26vw;
+}
+
+.img_channel {
+  max-width: 2.09vw;
+  max-height: 2.09vw;
+  border-radius: 1.562vw;
+  cursor: pointer;
+}
+
+.name_view_com {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.view_comm_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625vw;
+  flex-direction: row;
+}
+
+.name_channel {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px;
+  gap: 1px;
+  position: relative;
+
+  span {
+    font-size: 0.833vw;
+    font-weight: 400;
+    line-height: 1.042vw;
+  }
+  img {
+    position: absolute;
+    left: -0.9vw;
+    bottom: 0px;
+  }
+}
+
+.view_comment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.261vw;
+  height: 1.042vw;
+  font-family: $secondary_font;
+  span {
+    font-size: 0.625vw;
+    line-height: 0.84vw;
+  }
+}
+
+.img_view_com {
+  max-width: 0.68vw;
+  max-height: 0.68vw;
+  height: 100%;
+}
+
+// Button buy lessons styles
+
+.buy_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: $gradient_color;
+  border: none;
+  max-width: 8.333vw;
+  width: 100%;
+  padding: 0.261vw;
+  height: 2.083vw;
+  border-radius: 0.526vw;
+  gap: 0.261vw;
+  transition: 0.3s all;
+  img {
+    width: 1.25vw;
+    height: 1.25vw;
+  }
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+}
+
+.text_buy {
+  font-size: 0.781vw;
+  font-family: $primary_font;
+  color: $primary_color;
+  margin: 0;
+}
+
+.num_buy {
+  font-family: $primary_font;
+  color: $primary_color;
+  font-weight: 700;
+  font-size: 0.781vw;
+  margin: 0;
+}
+.shareMenu {
+  position: absolute;
+  right: 0px;
+  bottom: 30px;
+}
+.editButton {
+  font-family: $primary_font;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 8.698vw;
+  width: 100%;
+  height: 2.083vw;
+  border: none;
+  background: none;
+  font-size: 0.781vw;
+  font-weight: bold;
+
+  // Градиент для текста
+  background-image: linear-gradient(
+    33.93deg,
+    #05ad25 2.96%,
+    #0294a1 42.48%,
+    #181381 82%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  outline: none;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   border: 1px solid transparent;
+  //   border-image-source: linear-gradient(
+  //     270deg,
+  //     #191281 0%,
+  //     #0092a0 53.5%,
+  //     #03ad1e 100%
+  //   );
+  //   border-image-slice: 1;
+  //   z-index: -1;
+  // }
+}
+.extendDateButton {
+  @extend .editButton;
+  .text_buy {
+    font-size: 14px;
+  }
+  .img_buy {
+    position: absolute;
+    left: 11px;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .editButton {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 167px;
+    width: 100%;
+    height: 36px;
+    font-size: 14px;
+    font-weight: bold;
+    color: transparent;
+    background: white;
+    border: 1px solid transparent;
+    cursor: pointer;
+    outline: none;
+
+    // Градиентный текст
+    background-image: linear-gradient(
+      0deg,
+      #05ad25 2.96%,
+      #0294a1 42.48%,
+      #181381 82%
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-sizing: border-box;
+    border-image-slice: 10; /* border-radius*2 */
+    border-image-repeat: round;
+    border-image-width: 10px; /* border-radius*2 */
+    border-image-source: url("../../../../../app/assets/lessons/EditButton.png");
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   border: 1px solid transparent;
+    //   border-image-source: linear-gradient(
+    //     270deg,
+    //     #191281 0%,
+    //     #0092a0 53.5%,
+    //     #03ad1e 100%
+    //   );
+    //   // border-image-slice: 1;
+    //   z-index: -1;
+    // }
+  }
+
+  .blackLiistModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  .channel {
+    margin-bottom: 10px;
+  }
+  .filter_block {
+    margin-top: 65px;
+  }
+  .search_filter {
+    margin: 26px 0px;
+  }
+  .filter {
+    max-width: 400px;
+  }
+  .wrapperCustomSelect {
+    max-height: 36px;
+    border-radius: 25px;
+  }
+
+  .custom_select {
+    font-size: 16px;
+    max-width: 200px;
+    width: 100%;
+    height: 36px;
+  }
+  .active {
+    border-radius: 25px;
+  }
+  .inputContainer {
+    max-width: 600px;
+    width: 100%;
+  }
+  .vol {
+    width: 36px;
+    height: 36px;
+  }
+  .search_img {
+    width: 36px;
+    height: 36px;
+  }
+  .search {
+    height: 36px;
+    max-width: 600px;
+  }
+  .input {
+    border-radius: 30px;
+    height: 34px;
+    padding-left: 60px;
+    font-size: 16px;
+  }
+
+  .lessons_container {
+    margin: 0px 40px 100px 40px;
+  }
+  .all_lessons_box {
+    gap: 10px;
+    width: calc(100vw - 80px);
+  }
+  .lesson {
+    width: 100%;
+    flex: 1 1 calc(33.3% - 10px);
+    max-width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .img_lesson {
+    width: 100%;
+    // max-height: 119.5px;
+    // height: 100%;
+    border-radius: 20px;
+    position: relative;
+    object-fit: cover;
+    // aspect-ratio: 1 / 1;
+  }
+  .blackPhoto {
+    // width: 100%;
+    max-height: 202.5px;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+    background: rgba(212, 212, 212, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26.5px 0px;
+  }
+  .text {
+    color: #7e7e7e;
+  }
+  .back {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    font-family: $primary_font;
+    line-height: 36px;
+    font-weight: 500;
+    padding: 0px 12px;
+    cursor: pointer;
+    &:hover {
+      background: $gradient_color;
+      border-radius: 35px;
+      color: white;
+    }
+  }
+  .addBlackList {
+    @extend .back;
+  }
+
+  .lessonBlacklist {
+    flex: 1 1 calc(20% - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .imageContainer {
+    position: relative;
+    margin-bottom: 5px;
+  }
+  .time_lessons {
+    border-radius: 5px;
+    padding: 1px;
+    font-size: 14px;
+  }
+
+  .time_box {
+    border-radius: 5px;
+    bottom: 14px;
+    right: 10px;
+    max-height: 20px;
+    max-width: 45px;
+  }
+  .name_les_btn_share {
+    position: relative;
+    line-height: 20px;
+  }
+  .shareMenu {
+    display: flex;
+
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    box-sizing: border-box;
+    // height: 100%;
+    width: max-content;
+  }
+  .name_les {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .date {
+    line-height: 12px;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .info {
+    font-size: 14px;
+    line-height: 16.39px;
+    margin-bottom: 5px;
+    min-height: 33px;
+  }
+  .channel {
+    gap: 5px;
+    margin-bottom: 0;
+  }
+  .img_channel {
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 30px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  .view_comm_box {
+    gap: 12px;
+  }
+  .name_channel {
+    gap: 1px;
+    span {
+      font-size: 0.733vw;
+      line-height: 1vw;
+    }
+    img {
+      position: absolute;
+      left: -18px;
+      bottom: 0px;
+    }
+  }
+
+  .view_comment {
+    gap: 5px;
+    height: 20px;
+    span {
+      font-size: 11.5px;
+      line-height: 16.62px;
+    }
+  }
+  .img_view_com {
+    max-width: none;
+    max-height: none;
+    width: 15px;
+    height: 15px;
+  }
+  .img_com {
+    width: 12px;
+    height: 15px;
+  }
+  .buy_btn {
+    max-width: max-content;
+    width: 100vw;
+    height: 36px;
+    border-radius: 10px;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .text_buy {
+    font-size: 14px;
+    display: flex;
+    gap: 5px;
+  }
+  .num_buy {
+    font-size: 14px;
+  }
+  .button_play {
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+  .img_share {
+    width: 4px;
+    height: 16px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .shareMenu {
+    bottom: 6px;
+  }
+  .buy_btn {
+    max-width: 100%;
+  }
+  .lesson {
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(33.3% - 10px);
+    max-width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .filter_block {
+    margin-top: 82px;
+  }
+  .info {
+    font-size: 14px;
+  }
+  .text_buy {
+    font-size: 14px;
+    margin-left: 0;
+  }
+  .extendDateButton {
+    .text_buy {
+      font-size: 14px;
+    }
+  }
+  .num_buy {
+    font-size: 14px;
+  }
+  .img_channel {
+    width: 30px;
+    height: 30px;
+  }
+  .imageContainer {
+    margin-bottom: 5px;
+  }
+  .view_comm_box {
+    gap: 5px;
+  }
+  .channel_box {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 5px;
+    a {
+      width: 100%;
+      flex-direction: row;
+    }
+  }
+  .name_view_com {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .name_channel {
+    span {
+      font-size: 14px;
+    }
+  }
+  .editButton {
+    max-width: 100%;
+  }
+  // .buy_btn {
+  // 	max-width: 100%;
+  // }
+}
+@media screen and (max-width: 1440px) {
+  .img_lesson {
+    width: 100%;
+    // max-height: 169.5px;
+    // height: 100%;
+    border-radius: 20px;
+    position: relative;
+    object-fit: cover;
+    // aspect-ratio: 1 / 1;
+  }
+  .channel_box {
+    flex-direction: row;
+  }
+
+  .name_view_com {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .buy_btn {
+    max-width: max-content;
+  }
+  .text_buy {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  // .inputContainer {
+  //   max-width: 355px;
+  // }
+  .shareMenu {
+    right: 1px;
+    bottom: 6px;
+    // height: 100%;
+    // width: 50%;
+  }
+  .name_les {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 5px;
+  }
+  .date {
+    font-size: 8px;
+    line-height: 8px;
+  }
+  .info {
+    font-size: 10px;
+  }
+  // .channel {
+  // 	margin-bottom: 5px;
+  // }
+
+  .buy_btn {
+    height: 30px;
+  }
+  .text_buy {
+    font-size: 10px;
+  }
+  .num_buy {
+    font-size: 10px;
+  }
+  .time_lessons {
+    font-size: 14px;
+  }
+  .button_play {
+    width: auto;
+    height: auto;
+  }
+  .buy_btn img {
+    width: 15px;
+    height: 15px;
+  }
+  .img_channel {
+    width: 25px;
+    height: 25px;
+  }
+  .editButton {
+    height: 30px;
+  }
+  .name_channel {
+    span {
+      font-size: 10px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  // .lesson {
+  // 	flex: 1 1 calc(33% - 10px);
+  // 	max-width: 25%;
+  // 	min-width: 150px;
+  // }
+  .inputContainer {
+    max-width: 355px;
+  }
+
+  .name_channel {
+    gap: 1px;
+    span {
+      font-size: 1vw;
+      line-height: 1vw;
+    }
+  }
+  .img_share {
+    height: 14px;
+  }
+  .buy_btn {
+    .text_buy {
+      font-size: 12px;
+      gap: 2px;
+    }
+    .num_buy {
+      font-size: 12px;
+    }
+  }
+  .editButton {
+    font-size: 12px;
+  }
+  .time_lessons {
+    font-size: 14px;
+  }
+
+  .custom_select {
+    font-size: 12px;
+  }
+  .filter {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  // .img_lesson {
+  // 	max-height: 149.5px;
+  // 	height: 100%;
+  // }
+  .lesson {
+    flex: 1 1 calc(50% - 10px);
+    max-width: 50%;
+  }
+  .search_filter {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .inputContainer {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .filter {
+    justify-content: center;
+  }
+  .view_comment {
+    span {
+      font-size: 9px;
+    }
+  }
+  .info {
+    font-size: 12px;
+    -webkit-line-clamp: 4;
+  }
+  // .text_buy {
+  //   font-size: 9px;
+  // }
+  // .num_buy {
+  //   font-size: 9px;
+  // }
+  .name_channel {
+    gap: 1px;
+    span {
+      font-size: 1.5vw;
+      line-height: 1.5vw;
+    }
+  }
+  // .buy_btn {
+  //   max-width: 14vw;
+  // }
+  .img_channel {
+    width: 25px;
+    height: 25px;
+  }
+  .time_lessons {
+    font-size: 12px;
+  }
+  .button_play {
+    img {
+      width: 20px;
+      height: 22px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .lesson {
+      flex: 1 1 calc(50% - 10px);
+      max-width: 50%;
+    }
+    .info {
+      -webkit-line-clamp: 4;
+    }
+    .name_channel {
+      span {
+        font-size: 2vw;
+        line-height: 1.5vw;
+      }
+    }
+    .buy_btn {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    // .img_lesson {
+    // 	max-height: 247.5px;
+    // 	height: 100%;
+    // }
+    .lesson {
+      flex: 1 1 calc(100% - 10px);
+      max-width: 100%;
+    }
+    .inputContainer {
+      max-width: 400px;
+    }
+    .filter_block {
+      margin-top: 40px;
+    }
+    .name_les {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    .name_channel {
+      span {
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+    .date {
+      font-size: 12px;
+    }
+    .info {
+      font-size: 14px;
+    }
+    .channel {
+      gap: 10px;
+    }
+    .img_channel {
+      width: 30px;
+      height: 30px;
+    }
+    // .buy_btn {
+    //   max-width: 27vw;
+    //   width: 100%;
+    // }
+    .text_buy {
+      font-size: 12px;
+    }
+    .num_buy {
+      font-size: 12px;
+    }
+
+    .time_lessons {
+      font-size: 14px;
+    }
+    .view_comment {
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 400px) {
+//   .name_les {
+//     font-size: 18px;
+//   }
+//   .name_channel {
+//     span {
+//       font-size: 16px;
+//       font-weight: 400;
+//       line-height: 20px;
+//     }
+//   }
+
+//   .info {
+//     font-size: 12px;
+//     margin-bottom: 13px;
+//   }
+//   .buy_btn {
+//     max-width: 160px;
+//     width: 100%;
+//     min-height: 35px;
+//     padding: 10px 0px;
+//     p {
+//       margin: 0;
+//       font-size: 16px;
+//     }
+//   }
+// }
+// @media screen and (max-width: 355px) {
+//   .name_les {
+//     font-size: 15px;
+//   }
+//   .name_channel {
+//     span {
+//       font-size: 12px;
+//       font-weight: 400;
+//       line-height: 20px;
+//     }
+//   }
+//   .info {
+//     font-size: 12px;
+//     margin-bottom: 13px;
+//   }
+//   .buy_btn {
+//     max-width: 120px;
+//   }
+// }

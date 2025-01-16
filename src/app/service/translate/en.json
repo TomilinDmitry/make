@@ -1,0 +1,246 @@
+{
+  "homePage": {
+    "lessonCounter": "Lessons",
+    "userCounter": "Users",
+    "mainText": "MAKEUP LESSONS ANYWHERE IN THE WORLD ON ANY DIGITAL DEVICE AND IN A CONVENIENT LANGUAGE"
+  },
+  "navigation": {
+    "myNews": {
+      "title": "My News",
+      "description": "Lessons and events of people you are subscribed to"
+    },
+    "myManual": {
+      "title": "My documents",
+      "description": "Information panel with features and documentation"
+    },
+    "mySupport": {
+      "title": "My Requests",
+      "description": "User support service"
+    },
+    "FAQ": {
+      "title": "Frequently Asked Questions",
+      "description": "A collection of frequently asked questions on any topic and their answers"
+    },
+    "footer": {
+      "publicOffer": "Public Offer",
+      "privacyPolicy": "Privacy Policy",
+      "allRights": "All rights reserved"
+    }
+  },
+  "burger": {
+    "user": "Become a user",
+    "seller": "Become an author",
+    "addProfile": "Add profile",
+    "logout": "Logout",
+    "viewer": "You are a visitor"
+  },
+  "lessonPage": {
+    "filter": {
+      "popular": "By popularity",
+      "date": "By publication date"
+    },
+    "placeholder": "Search",
+    "editButton": "Edit",
+    "buyButton": "Buy",
+    "published": "Published",
+    "shareMenu": {
+      "favourite": "Add to favorites",
+      "unFavourite": "Remove",
+      "share": {
+        "title": "Share",
+        "message": "The link has been copied to clipboard"
+      },
+      "notInteresting": {
+        "title": "Not interesting",
+        "lessonDelete": "Lesson deleted",
+        "Cancel": "Cancel",
+        "tell": {
+          "title": "Tell us why",
+          "description": "We value your feedback on why you’re not interested in this lesson and what you didn’t like",
+          "sendButton": "Send request for review"
+        }
+      },
+      "complaint": "Report"
+    }
+  },
+  "userPage": {
+    "placeholderName": "Search by name",
+    "placeholderLocation": "Search by location",
+    "notFoundUser": "Users not found"
+  },
+  "authorization": {
+    "login": {
+      "title": "LOGIN",
+      "forgot": "Forgot password?",
+      "button": "Log in",
+      "withOutAccount": "Don’t have an account?",
+      "registration": "Register"
+    },
+    "registration": {
+      "title": "REGISTRATION",
+      "button": "Register",
+      "withAccount": "Already have an account?",
+      "login": "Log in"
+    },
+    "forgotPassword": {
+      "forgotPasswordText": "Password recovery"
+    },
+    "confirmEmail": {
+      "loading": "Loading data",
+      "confirmEmailText": "",
+      "backOnMainPage": "Return to the main page",
+      "notification": {
+        "error": "Email not found. Please try confirmation again.",
+        "error2": "Confirmation link expired, check your mail.",
+        "error3": "Error while resending activation.",
+        "success": "Email successfully confirmed!",
+        "successResend": "Confirmation email successfully resent."
+      }
+    },
+    "notifications": {
+      "loginSuccess": "You have logged in successfully",
+      "loginError": "Login error",
+      "registrationError": "You did not consent to the processing of personal data",
+      "passwordDontMatch": "Passwords do not match",
+      "accountCreate": "Account successfully created, check your mail",
+      "mailSend": "An email has been sent to your mailbox",
+      "sendAgain": "You can resend the email in",
+      "sendAgainSecond": "seconds",
+      "sendAgainButton": "Resend email"
+    }
+  },
+  "profile": {
+    "edit": "Edit",
+    "save": "Save changes",
+    "publish": "Publish",
+    "aboutMe": "About me",
+    "call": "Call",
+    "editProfileLabels": {
+      "name": "First Name",
+      "lastName": "Last Name",
+      "number": "Phone Number",
+      "location": "City"
+    },
+    "navigation": {
+      "myLesson": "My Lessons",
+      "access": "Lesson Access",
+      "favouriteLessons": "Favorite Lessons",
+      "myEvents": "My Events",
+      "subscribers": "Subscribers",
+      "subscriptions": "Subscriptions",
+      "finance": "Finance"
+    },
+    "skeleton": {
+      "noLessons": "No lessons found",
+      "noAccessLessons": "No accessible lessons found",
+      "noFavouriteLessons": "No favorite lessons found"
+    }
+  },
+  "userProfile": {
+    "subscribe": "Subscribe",
+    "subscribed": "You are subscribed",
+    "aboutMe": "About me",
+    "navigation": {
+      "lesson": "Lessons",
+      "events": "Events",
+      "subscribers": "Subscribers",
+      "subscriptions": "Subscriptions"
+    }
+  },
+  "player": {
+    "placeholder": "Search",
+    "navigation": {
+      "favourite": "Add to favorites",
+      "unFavourite": "Remove",
+      "share": "Share",
+      "complaint": "Report",
+      "subscribe": "Subscribe",
+      "subscribed": "You are subscribed",
+      "comments": "Comments",
+      "placeholder": "Leave a comment",
+      "send": "Send",
+      "replyBtn": "Reply",
+      "replyText": "Enter a reply",
+      "replyCancel": "Cancel",
+      "replySend": "Leave a reply",
+      "open": "Open",
+      "close": "Close",
+      "replies": "Replies"
+    }
+  },
+  "agreement": {
+    "text_1": "I consent to",
+    "link_1": "the processing of my personal data",
+    "text_2": "and",
+    "link_2": "I accept the terms of the offer"
+  },
+  "seller": {
+    "user": {
+      "fullAccess": "Full access to all materials on the platform.",
+      "interaction": "Interaction with instructors.",
+      "access": "Access to the user community.",
+      "noPossibility": "No ability to upload and sell your own lessons.",
+      "current": "Your current plan"
+    },
+    "seller": {
+      "allPossibility": "All USER features.",
+      "scale": "Ability to scale storage volume as your lesson collection and popularity grow.",
+      "monetization": "Full access to platform tools for content promotion and monetization.",
+      "choice": "Choice of storage volume for lessons.",
+      "sellDownload": "Ability to upload and sell your own lessons.",
+      "volume": "Volume of uploaded data on the site",
+      "quantity": "Number of months",
+      "seller": "Switch to seller",
+      "month": "month",
+      "month_3": "months",
+      "month_6": "months"
+    }
+  },
+  "publishButton": {
+    "lesson": "Publish lesson",
+    "event": "Publish event",
+    "photo": "Publish photo"
+  },
+  "default": {
+    "name": "Name",
+    "lastName": "Last Name",
+    "city": "City",
+    "country": "Country",
+    "mail": "Email",
+    "password": "Password",
+    "repeatPassword": "Repeat Password",
+    "Telegram": "Telegram",
+    "soon": "This tab will be available soon"
+  },
+  "myRequest": {
+    "title": "Support",
+    "navigation": {
+      "button_1": "All",
+      "button_2": "Open",
+      "button_3": "Closed",
+      "createRequest": "Create a request"
+    },
+    "table": {
+      "number": "Number",
+      "status": "Status",
+      "name": "Name",
+      "createDate": "Creation date",
+      "updateDate": "Update date"
+    },
+    "request": {
+      "create": "Create a request",
+      "name": "Enter your name*",
+      "lastName": "Enter your last name*",
+      "number": "Enter your phone number*",
+      "text": "Request text",
+      "file": "Drag files or click the button below to select them on your device",
+      "selectFile": "Select file",
+      "next": "Next"
+    },
+    "chat": {
+      "title": "Chat with support",
+      "placeholder": "Write a message",
+      "send": "Send"
+    }
+  }
+}

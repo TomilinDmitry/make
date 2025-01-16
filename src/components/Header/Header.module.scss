@@ -1,0 +1,485 @@
+@import "/src/app/styles/variables";
+
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+  z-index: 21;
+  width: 100%;
+  top: 0;
+}
+
+.headerWithBackground {
+  display: flex;
+  z-index: 21;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  background-image: url("../../app/assets/home/bg_home_small.jpg");
+  background-size: cover;
+  top: 0;
+  height: 3.385vw;
+}
+
+.containerHeader {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100vw;
+  width: 96%;
+  padding: 0.313vw 2.083vw;
+  align-items: center;
+  position: relative;
+  z-index: 21;
+}
+.containerHeaderFixed{
+@extend.containerHeader;
+position: fixed;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.84vw;
+  color: $primary_color;
+  margin-right: 2.083vw;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 7.3vw;
+  width: 100%;
+  gap: 0.42vw;
+  height: 1.875vw;
+  padding: 0px 0.781vw;
+  border-radius: 1.67vw;
+  text-decoration: none;
+  color: $primary_color;
+  font-family: $primary_font;
+  background-color: rgba(255, 255, 255, 0.24);
+  transition: 1ms;
+  .img_links {
+    width: 0.94vw;
+    height: 0.94vw;
+  }
+}
+
+.text {
+  font-size: 0.729vw;
+  line-height: 27.32px;
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 7.3vw;
+  width: 100%;
+  gap: 0.42vw;
+  height: 1.875vw;
+  padding: 0px 1.05vw;
+  border-radius: 1.67vw;
+  background-color: #ffffff;
+  .img_links {
+    width: 0.94vw;
+    height: 0.94vw;
+  }
+}
+
+.activeImage {
+  fill: red;
+}
+
+.activeText {
+  color: $links_color;
+  font-size: 0.729vw;
+  line-height: 27.32px;
+}
+
+.title {
+  font-family: $secondary_font;
+  color: $primary_color;
+  font-size: 1.875vw;
+  margin: 0;
+  font-weight: 700;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.42vw;
+  margin-right: 3px;
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.875vw;
+  width: 1.875vw;
+  padding: 0.5px 1px 0px 2px;
+  border-radius: 1.67vw;
+  background-color: rgba(255, 255, 255, 0.24);
+  border: none;
+}
+
+.button_profile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: rgba(255, 255, 255, 0.24);
+  width: 4.28vw;
+  height: 1.875vw;
+  border-radius: 1.567vw;
+  border: none;
+  gap: 0.525vw;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  .img_icon {
+    position: absolute;
+    left: 5px;
+    width: 1.563vw;
+    height: 1.563vw;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 20;
+  }
+  .arrow {
+    position: absolute;
+    right: 0.68vw;
+    width: 0.63vw;
+    height: 0.42vw;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.burger {
+  position: absolute;
+  width: 100%;
+  top: 10px;
+}
+
+.active_button_profile {
+  position: relative;
+  display: flex;
+  background-color: rgba(88, 88, 88, 0.4);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.image_radius {
+  border-radius: 20px;
+  width: 32px;
+  height: 29px;
+}
+
+@media screen and (max-width: 1920px) {
+  .headerWithBackground {
+    height: 50px;
+    z-index: 0;
+    position: static;
+  }
+  .img_language {
+    width: 28px;
+    height: 28px;
+    border-radius: 20px;
+    color: white;
+  }
+  .image_radius {
+    width: 18px;
+    height: 18px;
+  }
+  .image_manual {
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+  .containerHeader {
+    padding: 0px 40px;
+    width: calc(100% - 80px);
+    height: 49px;
+  }
+  .burger {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    height: 30px;
+    right: 0px;
+    width: 30px;
+  }
+  .button_profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    gap: 10px;
+    padding: 0px;
+    .img_icon {
+      left: 1px;
+      width: 28px;
+      height: 28px;
+    }
+    .arrow {
+      right: 13px;
+      width: 13px;
+      height: 13px;
+    }
+  }
+  .linkTo{
+    display:flex;
+    height: 40px;
+  }
+  .links {
+    gap: 16px;
+    margin-right: 40px;
+  }
+
+  .button {
+    max-height: 30px;
+    height: 30px;
+    width: 30px;
+    padding: 0.5px 2px 0px 2px;
+    border-radius: 30px;
+    position: relative;
+    color: white;
+  }
+  .languageList {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 35px;
+    background: #000000c9;
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 99;
+    right: 0px;
+    gap: 10px;
+    color: white;
+    width: max-content;
+    .listElement {
+      display: flex;
+      align-items: center;
+      img {
+        height: 18px;
+        width: 18px;
+      }
+      // &:hover {
+      //   background: #474749;
+      // }
+      &:nth-last-child(1) {
+        border-radius: 0px 0px 20px 20px;
+      }
+      &:nth-child(1) {
+        border-radius: 20px 20px 0px 0px;
+      }
+    }
+    .element {
+      padding: 0px 10px;
+      display: flex;
+      align-items: center;
+      height: 30px;
+      width: max-content;
+      text-align: left;
+      &:hover{
+        color:#01919f;
+      }
+    }
+  }
+  .buttons {
+    gap: 8px;
+    margin-right: 3px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .link {
+    max-width: 140px;
+    gap: 8px;
+    height: max-content;
+    min-height: 30px;
+    padding: 0px 15px;
+    border-radius: 32px;
+    .img_links {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .active {
+    font-size: 14px;
+  }
+  .activeText {
+    font-size: 14px;
+    line-height: 27.32px;
+    .img_links {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .title {
+    font-size: 34px;
+    margin: 0;
+    font-weight: 700;
+  }
+  .manual{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    height: 30px;
+    right: 0px;
+    width: 30px;
+
+  }
+}
+
+@media (width <= 1675px) {
+  .activeImage {
+    content: url("../../app/assets/other/burger.svg");
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .links {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .links {
+    gap: 8px;
+  }
+  .link {
+    width: max-content;
+    padding: 0px 10px;
+    gap: 4px;
+    .img_links {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .text {
+    font-size: 12px;
+  }
+  .activeText {
+    font-size: 12px;
+  }
+  .img_language {
+    height: 28px;
+    width: 28px;
+  }
+  .button {
+    height: 30px;
+    width: 30px;
+  }
+  .button_profile {
+    // height: 30px;
+    // width: 60px;
+    .img_icon {
+      width: 28px;
+      height: 28px;
+    }
+    .arrow {
+      right: 10px;
+      top: 55%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .linkTo {
+    width: max-content;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .containerHeader {
+    height: 49px;
+  }
+  .text {
+    font-size: 10px;
+  }
+  .activeText {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
+  .linkTo{
+    height: 30px;
+  }
+  .links {
+    gap: 4px;
+  }
+  .link {
+    width: max-content;
+    padding: 0px 5px;
+    gap: 2px;
+    .img_links {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .text {
+    font-size: 8px;
+  }
+  .activeText {
+    font-size: 8px;
+  }
+  .buttons {
+    gap: 4px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .button_profile {
+    // height: 30px;
+    // width: 60px;
+    height: 30px;
+    width: 30px;
+    .img_icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .burger{
+    width: 30px;
+    height: 30px;
+  }
+  .containerHeader {
+    padding: 0px 15px;
+    width: calc(100% - 30px);
+  }
+  .title {
+    font-size: 20px;
+  }
+
+  .button {
+    max-height: 30px;
+    height:30px;
+    width: 30px;
+    .image_radius {
+      width: 15px;
+      height: 15px;
+    }
+    .img_language {
+      width: 23px;
+      height: 23px;
+    }
+  }
+}
+@media screen and (max-width: 530px) {
+  .links {
+    display: none;
+  }
+}

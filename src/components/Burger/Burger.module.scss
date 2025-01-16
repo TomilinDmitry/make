@@ -1,0 +1,343 @@
+@import "/src/app/styles/variables";
+
+// Styles button_burger
+
+.burger {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 300;
+  transition: 1s;
+}
+.menu {
+  position: absolute;
+  background-image: url("../../app/assets/other/Subtract.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  right: 0px;
+  top: -0.625vw;
+  border-radius: 0.521vw;
+}
+
+// Styles burger links
+
+.list {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.521vw;
+  list-style: none;
+  padding: 0;
+  width: 11.042vw;
+  padding: 1.042vw;
+  margin: 0;
+  height: 10.417vw;
+}
+
+.list_section {
+  display: flex;
+  font-size: 0.938vw;
+  font-family: $primary_font;
+  color: $primary_color;
+  font-weight: 400;
+  text-align: left;
+  align-items: start;
+  text-decoration: none;
+  transition: 0.5s all;
+  padding: 0;
+  &:hover {
+    color: #01919f;
+  }
+}
+
+// Styles profile links
+
+.profile_section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.365vw;
+  &:hover {
+    color: #01919f;
+  }
+}
+
+.box_img {
+  display: flex;
+  background-color: $primary_color;
+  border-radius: 100%;
+  padding: 0.104vw;
+  img {
+    width: 1.042vw;
+    height: 1.042vw;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.prof_sec_img {
+  width: 1.302vw;
+  height: 1.302vw;
+  border-radius: 1.563vw;
+}
+
+.prof_select {
+  font-weight: 400;
+  color: $primary_color;
+  font-size: 0.938vw;
+}
+.icon_profile {
+  width: 1.094vw;
+  height: 1.094vw;
+}
+// Styles line
+.line {
+  height: 0.104vw;
+  width: 9.375vw;
+  background-color: $primary_color;
+  margin: 0.104vw 0;
+  transition: all 0.3s ease;
+}
+.linkProfile {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1920px) {
+  .burger {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 300;
+    transition: 1s;
+  }
+  .menu {
+    position: absolute;
+    background: none;
+
+    background: #000000c9;
+    right: 0px;
+    top: 35px;
+    border-radius: 10px;
+  }
+
+  .list {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    width: max-content;
+    padding: 10px;
+    margin: 0;
+    height: max-content;
+    margin-top: 0px;
+  }
+
+  .list_section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    font-family: $primary_font;
+    color: $primary_color;
+    font-weight: 400;
+    text-align: left;
+    align-items: start;
+    text-decoration: none;
+    transition: 0.5s all;
+    padding: 0;
+    &:hover {
+      color: #01919f;
+    }
+  }
+
+  .profile_section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    gap: 7px;
+    span {
+      transition: 0.5s all;
+      font-size: 14px;
+      &:hover {
+        color: #01919f;
+      }
+    }
+  }
+
+  .box_img {
+    display: flex;
+    background-color: $primary_color;
+    border-radius: 100%;
+    padding: 2px;
+    img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .prof_sec_img {
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+  }
+
+  .prof_select {
+    font-weight: 400;
+    color: $primary_color;
+  }
+
+  .icon_profile {
+    width: 21px;
+    height: 21px;
+  }
+
+  .line {
+    height: 2px;
+    width: 180px;
+    background-color: $primary_color;
+    margin: 2px 0;
+    transition: all 0.3s ease;
+  }
+  .linkProfile {
+    color: white;
+    text-decoration: none;
+  }
+}
+.none {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .list {
+    padding: 13px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  // .burger {
+  //   position: absolute;
+  //   top: 0;
+  //   cursor: pointer;
+  //   display: flex;
+  //   flex-direction: column;
+  //   position: absolute;
+  //   z-index: 300;
+  //   transition: 1s;
+  // }
+  // .menu {
+  //   position: absolute;
+  //   // background-image: url("../../app/assets/burger/burgerBg2.svg");
+
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   right: 0px;
+  //   top: -165px;
+  //   border-radius: 0.521vw;
+  //   // height: 250px;
+  // }
+
+  // // Styles burger links
+
+  // .list {
+  //   display: flex;
+  //   justify-content: flex-start;
+  //   flex-direction: column;
+  //   align-items: start;
+  //   gap: 10px;
+  //   list-style: none;
+  //   padding: 0;
+  //   width: 140px;
+  //   padding: 20px 28px 0px 20px;
+  //   margin: 0;
+  // }
+
+  // .list_section {
+  //   display: flex;
+  //   font-size: 12px;
+  //   font-family: $primary_font;
+  //   color: $primary_color;
+  //   font-weight: 400;
+  //   text-align: left;
+  //   align-items: start;
+  //   text-decoration: none;
+  //   transition: 0.5s all;
+  //   padding: 0;
+  //   cursor: pointer;
+  //   &:hover {
+  //     color: #01919f;
+  //   }
+  // }
+
+  // .profile_section {
+  //   display: flex;
+  //   justify-content: left;
+  //   align-items: center;
+  //   flex-direction: row;
+  //   gap: 7px;
+  //   span {
+  //     transition: 0.5s all;
+  //     font-size: 12px;
+  //     &:hover {
+  //       color: #01919f;
+  //     }
+  //   }
+  // }
+
+  // .box_img {
+  //   display: flex;
+  //   background-color: $primary_color;
+  //   border-radius: 100%;
+  //   padding: 2px;
+  //   img {
+  //     width: 20px;
+  //     height: 20px;
+  //     border-radius: 50%;
+  //     object-fit: cover;
+  //   }
+  // }
+
+  // .prof_sec_img {
+  //   width: 25px;
+  //   height: 25px;
+  //   border-radius: 30px;
+  // }
+
+  // .prof_select {
+  //   font-weight: 400;
+  //   color: $primary_color;
+  // }
+
+  // .icon_profile {
+  //   width: 21px;
+  //   height: 21px;
+  // }
+
+  // .line {
+  //   height: 2px;
+  //   width: 140px;
+  //   background-color: $primary_color;
+  //   margin: 2px 0;
+  //   transition: all 0.3s ease;
+  // }
+  // .linkProfile {
+  //   color: white;
+  //   text-decoration: none;
+  // }
+}

@@ -1,0 +1,246 @@
+@import "/src/app/styles/variables";
+.wrapper {
+  // position: absolute;
+  display: flex;
+  justify-content: center;
+  width: calc(100vw - 6px);
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+}
+.container {
+  // background: rgba(255, 255, 255, 1);
+  max-width: 70%;
+  padding: 0px 30px 0px 30px;
+  // position: absolute;
+  // left: 50%;
+  // top: 50%;
+  // transform: translate(-50%, -50%);
+  // max-width: 700px;
+  // width: 100%;
+  border-radius: 20px;
+
+  // box-shadow: 1px 2px 10px 0px #16258640;
+}
+.scrollIcon {
+  position: fixed;
+  right: 35px;
+  bottom: 100px;
+  cursor: pointer;
+}
+.mainBlock {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 20px;
+  padding: 26px 0px 50px 0px;
+  .title {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: $primary_font;
+    background: linear-gradient(
+      88.41deg,
+      #05ad25 3.74%,
+      #0294a1 51.95%,
+      #181381 120.63%
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.imageBlock {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  cursor: pointer;
+  .closeIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
+.textContent {
+  margin: 0;
+  overflow: auto;
+  // max-height: 500px;
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  gap: 20px;
+  P {
+    margin: 0;
+    margin-right: 5px;
+    // margin-bottom: 20px;
+  }
+  a {
+    background: linear-gradient(
+      270deg,
+      #191281 30.32%,
+      #0092a0 82.62%,
+      #03ad1e 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    gap: 5px;
+    border-bottom: 1px solid;
+  }
+}
+.titleElement {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.red {
+  background: linear-gradient(
+    270deg,
+    #191281 30.32%,
+    #0092a0 82.62%,
+    #03ad1e 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  gap: 5px;
+}
+.requisites {
+  line-height: 15px;
+}
+.rules {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  span {
+    font-size: 18px;
+  }
+  .buttonCheckbox {
+    min-width: 22px;
+    min-height: 22px;
+    background: transparent;
+    border-image-slice: 10; /* border-radius*2 */
+    border-image-repeat: round;
+    border-image-width: 9px; /* border-radius*2 */
+    border-image-source: url("../../../app/assets/Seller/borderCheckbox.png");
+    border-style: solid;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 2;
+  }
+  .checked {
+    min-width: 22px;
+    min-height: 22px;
+    background: linear-gradient(
+      275.51deg,
+      #05ad25 4.4%,
+      #0294a1 50%,
+      #181381 95.6%
+    );
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+  }
+  .checkedIcon {
+    position: absolute;
+    // top: 49px;
+    z-index: 1;
+    left: 4px;
+    top: 5px;
+    cursor: pointer;
+  }
+}
+.bottomContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .selectedTariff {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .titleTariff {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .tariff {
+      margin: 0;
+      .author {
+        font-size: 18px;
+        font-family: $primary_font;
+        background: linear-gradient(
+          270deg,
+          #191281 15.32%,
+          #0092a0 60.62%,
+          #03ad1e 100%
+        );
+
+        font-weight: 700;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .name {
+        font-size: 18px;
+        color: rgba(58, 58, 56, 1);
+      }
+    }
+  }
+  .payment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+
+    .paymentMethodTitle {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .paymentSelect {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .paymentMethod {
+        background: rgba(240, 240, 240, 1);
+        border-radius: 10px;
+        padding: 10px;
+        flex: 1 1 calc(50% - 30px);
+        max-width: 50%;
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+  .paymentButton {
+    cursor: pointer;
+
+    padding: 0px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    height: 30px;
+    font-family: $primary_font;
+    background: linear-gradient(
+      270deg,
+      #191281 0%,
+      #0092a0 53.5%,
+      #03ad1e 100%
+    );
+
+    color: white;
+    font-size: 18px;
+    span {
+      margin: 0px 20px;
+    }
+  }
+}

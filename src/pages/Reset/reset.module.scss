@@ -1,0 +1,75 @@
+@import "/src/app/styles/variables";
+.box_email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: (translate(-50%, -50%));
+  font-family: $primary_font;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../app/assets/home/bg_home.jpg");
+  background-size: cover;
+
+  h1 {
+    font-size: 3.125vw;
+
+    background-image: $gradient_color;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h3 {
+    font-size: 4.167vw;
+    text-align: center;
+    width: 52.083vw;
+  }
+  button {
+    padding: 0.781vw;
+    outline: none;
+    border-radius: 0.625vw;
+    border: none;
+    // font-size: 1.458vw;
+    background: $gradient_color;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .box_email {
+    h1 {
+      font-size: 60px;
+    }
+    h3 {
+      font-size: 80px;
+      width: 1000px;
+    }
+    button {
+      padding: 15px;
+      border-radius: 12px;
+      // font-size: 28px;
+    }
+  }
+}
+
+// Закончить
+
+// @media screen and (max-width: 1024px) {
+//   .box_email {
+//     h1 {
+//       font-size: 5.859vw;
+//     }
+//     h3 {
+//       font-size: 7.813vw;
+//       width: 1000px;
+//     }
+//     button {
+//       padding: 1.465vw;
+//       border-radius: 1.172vw;
+//       font-size: 2.734vw;
+//     }
+//   }
+// }

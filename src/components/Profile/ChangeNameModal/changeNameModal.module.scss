@@ -1,0 +1,175 @@
+@import "/src/app/styles/variables";
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 553px;
+  height: max-content;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 15px;
+  padding: 36px;
+  font-family: $primary_font;
+}
+.close {
+  cursor: pointer;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.title {
+  text-align: center;
+  margin: 0;
+  font-family: $secondary_font;
+  font-size: 32px;
+  font-weight: 800;
+  background: linear-gradient(
+    270deg,
+    #191281 0%,
+    #0092a0 53.5%,
+    #03ad1e 100%
+  );
+  margin-bottom: 38px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+.input {
+  padding: 13px 0px 13px 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: $primary_font;
+  background: rgba(240, 240, 240, 1);
+  border-radius: 10px;
+}
+.textarea {
+  padding: 15px 0px 0px 20px;
+  border: none;
+  resize: none;
+  outline: none;
+  height: 90px;
+  background: rgba(240, 240, 240, 1);
+  border-radius: 10px;
+  &::placeholder {
+    font-size: 14px;
+    font-family: $primary_font;
+  }
+}
+.hiden {
+  display: none;
+}
+.checkboxBlock {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+  //   align-items: baseline;
+  .agreement {
+    margin: 0;
+    font-size: 14px;
+    margin-top: 2px;
+  }
+}
+
+.gradientText {
+  font-weight: 500;
+  background-image: $gradient_color;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  &:hover {
+    border-bottom: 1px solid;
+    border-image: $gradient_border_color;
+  }
+}
+.buttonCheckbox {
+  margin-top: 5px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+  box-sizing: border-box;
+  border-image-slice: 10; /* border-radius*2 */
+  border-image-repeat: round;
+  border-image-width: 12px; /* border-radius*2 */
+  border-image-source: url("../../../app/assets/createLessonModal/checkBoxBorder.svg");
+  height: 22px;
+  min-width: 22px;
+  padding: 0;
+  img {
+    width: 12px;
+    height: 12px;
+  }
+}
+.checked {
+  margin-top: 5px;
+  min-width: 22px;
+  height: 22px;
+  background: linear-gradient(
+    275.51deg,
+    #05ad25 4.4%,
+    #0294a1 50%,
+    #181381 95.6%
+  );
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.checkedIcon {
+  position: absolute;
+  // top: 49px;
+  z-index: 1;
+  left: 4px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.button {
+  cursor: pointer;
+  width: 100%;
+  background: linear-gradient(
+    89.57deg,
+    #05ad25 0.38%,
+    #0294a1 50%,
+    #181381 99.62%
+  );
+  box-shadow: 1px 2px 25px 0px rgba(20, 47, 136, 0.25);
+  height: 50px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-family: $primary_font;
+  font-size: 18px;
+}
+.disabled {
+  @extend .button;
+  cursor: not-allowed;
+  background: #777777;
+}
+
+@media screen and (max-width: 868px) {
+  .container {
+    width: 80%;
+  }
+}

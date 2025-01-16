@@ -1,0 +1,247 @@
+{
+  "homePage": {
+    "lessonCounter": "강의",
+    "userCounter": "사용자",
+    "mainText": "전 세계 어디에서나 모든 디지털 기기에서 편리한 언어로 메이크업 레슨을 제공합니다"
+  },
+  "navigation": {
+    "myNews": {
+      "title": "내 뉴스",
+      "description": "내가 구독한 사람들의 강의와 이벤트"
+    },
+    "myManual": {
+      "title": "내 문서",
+      "description": "기능과 문서를 포함한 대시보드"
+    },
+    "mySupport": {
+      "title": "내 요청",
+      "description": "사용자 지원 서비스"
+    },
+    "FAQ": {
+      "title": "자주 묻는 질문",
+      "description": "모든 주제에 대한 자주 묻는 질문과 그에 대한 답변"
+    },
+    "footer": {
+      "publicOffer": "공개 제안",
+      "privacyPolicy": "개인 정보 보호 정책",
+      "allRights": "저작권"
+    }
+  },
+  "burger": {
+    "user": "사용자 되기",
+    "seller": "작가 되기",
+    "addProfile": "프로필 추가",
+    "logout": "로그아웃",
+    "viewer": "당신은 방문자입니다"
+  },
+  "lessonPage": {
+    "filter": {
+      "popular": "인기순",
+      "date": "최신순"
+    },
+    "placeholder": "검색",
+    "editButton": "편집",
+    "buyButton": "구매",
+    "published": "게시됨",
+    "shareMenu": {
+      "favourite": "즐겨찾기에 추가",
+      "unFavourite": "제거",
+      "share": {
+        "title": "공유",
+        "message": "링크가 클립보드에 복사되었습니다"
+      },
+      "notInteresting": {
+        "title": "흥미 없음",
+        "lessonDelete": "강의가 삭제되었습니다",
+        "Cancel": "취소",
+        "tell": {
+          "title": "이유를 알려주세요",
+          "description": "왜 이 강의에 흥미가 없었는지, 어떤 점이 마음에 들지 않았는지 알려주세요",
+          "sendButton": "검토 요청 보내기"
+        }
+      },
+      "complaint": "불만 제기"
+    }
+  },
+  "userPage": {
+    "placeholderName": "이름으로 검색",
+    "placeholderLocation": "위치로 검색",
+    "notFoundUser": "사용자를 찾을 수 없습니다"
+  },
+  "authorization": {
+    "login": {
+      "title": "로그인",
+      "forgot": "비밀번호를 잊으셨나요?",
+      "button": "로그인",
+      "withOutAccount": "계정이 없으신가요?",
+      "registration": "회원가입"
+    },
+    "registration": {
+      "title": "회원가입",
+      "button": "회원가입",
+      "withAccount": "이미 계정이 있나요?",
+      "login": "로그인"
+    },
+
+    "forgotPassword": {
+      "forgotPasswordText": "비밀번호 복구"
+    },
+    "confirmEmail": {
+      "loading": "데이터 로드 중",
+      "confirmEmailText": "",
+      "backOnMainPage": "메인 페이지로 돌아가기",
+      "notification": {
+        "error": "이메일을 찾을 수 없습니다. 확인을 다시 시도해주세요.",
+        "error2": "인증 링크가 만료되었습니다. 이메일을 확인해주세요.",
+        "error3": "활성화 메일 재발송 중 오류가 발생했습니다.",
+        "success": "이메일이 성공적으로 인증되었습니다!",
+        "successResend": "인증 메일이 성공적으로 재발송되었습니다."
+      }
+    },
+    "notifications": {
+      "loginSuccess": "로그인 성공",
+      "loginError": "로그인 오류",
+      "registrationError": "개인 데이터 처리에 동의하지 않으셨습니다",
+      "passwordDontMatch": "비밀번호가 일치하지 않습니다",
+      "accountCreate": "계정이 성공적으로 생성되었습니다. 이메일을 확인하세요.",
+      "mailSend": "이메일로 메일이 전송되었습니다.",
+      "sendAgain": "다시 메일을 보낼 수 있습니다.",
+      "sendAgainSecond": "초 후",
+      "sendAgainButton": "메일 재발송"
+    }
+  },
+  "profile": {
+    "edit": "편집",
+    "save": "변경사항 저장",
+    "publish": "게시",
+    "aboutMe": "자기소개",
+    "call": "전화하기",
+    "editProfileLabels": {
+      "name": "이름",
+      "lastName": "성",
+      "number": "전화번호",
+      "location": "도시"
+    },
+    "navigation": {
+      "myLesson": "내 강의",
+      "access": "강의 접근",
+      "favouriteLessons": "즐겨찾기 강의",
+      "myEvents": "내 이벤트",
+      "subscribers": "구독자",
+      "subscriptions": "구독",
+      "finance": "재정"
+    },
+    "skeleton": {
+      "noLessons": "강의를 찾을 수 없습니다",
+      "noAccessLessons": "접근할 수 있는 강의가 없습니다",
+      "noFavouriteLessons": "즐겨찾기 강의가 없습니다"
+    }
+  },
+  "userProfile": {
+    "subscribe": "구독",
+    "subscribed": "구독 중",
+    "aboutMe": "자기소개",
+    "navigation": {
+      "lesson": "강의",
+      "events": "이벤트",
+      "subscribers": "구독자",
+      "subscriptions": "구독"
+    }
+  },
+  "player": {
+    "placeholder": "검색",
+    "navigation": {
+      "favourite": "즐겨찾기에 추가",
+      "unFavourite": "제거",
+      "share": "공유",
+      "complaint": "불만 제기",
+      "subscribe": "구독",
+      "subscribed": "구독 중",
+      "comments": "댓글",
+      "placeholder": "댓글 남기기",
+      "send": "보내기",
+      "replyBtn": "답변하기",
+      "replyText": "답변 입력",
+      "replyCancel": "취소",
+      "replySend": "답변 남기기",
+      "open": "열기",
+      "close": "닫기",
+      "replies": "답글"
+    }
+  },
+  "agreement": {
+    "text_1": "개인 데이터 처리를 동의합니다",
+    "link_1": "개인 데이터 처리",
+    "text_2": "그리고",
+    "link_2": "이용 약관에 동의합니다"
+  },
+  "seller": {
+    "user": {
+      "fullAccess": "플랫폼의 모든 자료에 대한 전체 액세스.",
+      "interaction": "강사와의 상호작용.",
+      "access": "사용자 커뮤니티에 대한 접근.",
+      "noPossibility": "자신의 강의를 업로드하고 판매할 수 없음.",
+      "current": "현재 사용 중인 요금제"
+    },
+    "seller": {
+      "allPossibility": "USER의 모든 기능.",
+      "scale": "강의 컬렉션과 인기가 성장함에 따라 저장 용량을 확장할 수 있는 기능.",
+      "monetization": "콘텐츠 홍보 및 수익화를 위한 플랫폼 도구에 대한 전체 액세스.",
+      "choice": "강의를 위한 저장 용량 선택.",
+      "sellDownload": "자신의 강의를 업로드하고 판매할 수 있는 기능.",
+      "volume": "웹사이트에 업로드된 데이터 용량",
+      "quantity": "개월 수",
+      "seller": "판매자로 전환",
+      "month": "달",
+      "month_3": "개월",
+      "month_6": "개월"
+    }
+  },
+  "publishButton": {
+    "lesson": "수업 게시",
+    "event": "이벤트 게시",
+    "photo": "사진 게시"
+  },
+  "default": {
+    "name": "이름",
+    "lastName": "성",
+    "city": "도시",
+    "country": "국가",
+    "mail": "이메일",
+    "password": "비밀번호",
+    "repeatPassword": "비밀번호 재입력",
+    "Telegram": "텔레그램",
+    "soon": "이 탭은 곧 추가될 예정입니다"
+  },
+  "myRequest": {
+    "title": "지원",
+    "navigation": {
+      "button_1": "전체",
+      "button_2": "열림",
+      "button_3": "닫힘",
+      "createRequest": "요청 생성"
+    },
+    "table": {
+      "number": "번호",
+      "status": "상태",
+      "name": "이름",
+      "createDate": "생성 날짜",
+      "updateDate": "업데이트 날짜"
+    },
+    "request": {
+      "create": "요청 생성",
+      "name": "이름을 입력하세요*",
+      "lastName": "성을 입력하세요*",
+      "number": "전화번호를 입력하세요*",
+      "text": "요청 내용",
+      "file": "파일을 드래그하거나 아래 버튼을 눌러 선택하세요.",
+      "selectFile": "파일 선택",
+      "next": "다음"
+    },
+    "chat": {
+      "title": "지원 채팅",
+      "placeholder": "메시지 작성",
+      "send": "보내기"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.react-dadata__container {
+  max-width: 19.01vw;
+  width: 100%;
+}
+.react-dadata__input {
+  max-width: 20.052vw;
+  width: 100%;
+  border-radius: 0.625vw;
+  position: relative;
+  font-size: 0.833vw;
+  padding: 0.625vw 0.781vw 0.625vw 1.042vw;
+  display: block;
+  height: 2.604vw;
+  font-family: "Manrope", sans-serif;
+  border: none;
+  border-radius: 0.781vw;
+  background-color: rgb(240, 240, 240);
+}
+.react-dadata__input:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+@media screen and (max-width: 1920px) {
+  .react-dadata__container {
+    max-width: 365px;
+    width: 100%;
+  }
+  .react-dadata__input {
+    max-width: 385px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 14px;
+    padding: 0px 15px 0px 20px;
+    height: 30px;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .react-dadata__container {
+    max-width: calc(100% - 10px);
+  }
+  .react-dadata__input {
+    max-width: 100%;
+  }
+}
+/* @media screen and (max-width: 450px) {
+  .react-dadata__container {
+    max-width: 390px;
+  }
+  .react-dadata__input {
+    max-width: 385px;
+    height: 38px;
+  }
+} */

@@ -1,0 +1,246 @@
+{
+  "homePage": {
+    "lessonCounter": "Leçons",
+    "userCounter": "Utilisateurs",
+    "mainText": "COURS DE MAQUILLAGE PARTOUT DANS LE MONDE SUR N'IMPORTE QUEL APPAREIL NUMÉRIQUE ET DANS UNE LANGUE PRATIQUE"
+  },
+  "navigation": {
+    "myNews": {
+      "title": "Mes Actualités",
+      "description": "Leçons et activités des utilisateurs abonnés"
+    },
+    "myManual": {
+      "title": "Mes documents",
+      "description": "Tableaux de bord avec fonctionnalités et documentation"
+    },
+    "mySupport": {
+      "title": "Support",
+      "description": "Service d'assistance aux utilisateurs"
+    },
+    "FAQ": {
+      "title": "FAQ",
+      "description": "Questions fréquemment posées sur tous les sujets"
+    },
+    "footer": {
+      "publicOffer": "Offre publique",
+      "privacyPolicy": "Politique de confidentialité",
+      "allRights": "Tous droits réservés"
+    }
+  },
+  "burger": {
+    "user": "Devenir utilisateur",
+    "seller": "Devenir auteur",
+    "addProfile": "Ajouter un profil",
+    "logout": "Se déconnecter",
+    "viewer": "Vous êtes un visiteur"
+  },
+  "lessonPage": {
+    "filter": {
+      "popular": "Par popularité",
+      "date": "Par date"
+    },
+    "placeholder": "Rechercher",
+    "editButton": "Modifier",
+    "buyButton": "Acheter",
+    "published": "Publié",
+    "shareMenu": {
+      "favourite": "Ajouter aux favoris",
+      "unFavourite": "Retirer",
+      "share": {
+        "title": "Partager",
+        "message": "Le lien a été copié dans le presse-papiers"
+      },
+      "notInteresting": {
+        "title": "Pas intéressant",
+        "lessonDelete": "Leçon supprimée",
+        "Cancel": "Annuler",
+        "tell": {
+          "title": "Expliquez la raison",
+          "description": "Dites-nous pourquoi cette leçon ne vous intéresse pas et ce qui ne vous plaît pas",
+          "sendButton": "Envoyer la demande de révision"
+        }
+      },
+      "complaint": "Plainte"
+    }
+  },
+  "userPage": {
+    "placeholderName": "Rechercher par nom",
+    "placeholderLocation": "Rechercher par localisation",
+    "notFoundUser": "Utilisateurs introuvables"
+  },
+  "authorization": {
+    "login": {
+      "title": "Connexion",
+      "forgot": "Mot de passe oublié ?",
+      "button": "Se connecter",
+      "withOutAccount": "Pas encore de compte ?",
+      "registration": "S'inscrire"
+    },
+    "registration": {
+      "title": "Inscription",
+      "button": "S'inscrire",
+      "withAccount": "Déjà un compte ?",
+      "login": "Se connecter"
+    },
+    "forgotPassword": {
+      "forgotPasswordText": "Récupération du mot de passe"
+    },
+    "confirmEmail": {
+      "loading": "Chargement des données",
+      "confirmEmailText": "",
+      "backOnMainPage": "Retourner à la page principale",
+      "notification": {
+        "error": "Email introuvable. Veuillez réessayer la confirmation.",
+        "error2": "Le lien de confirmation a expiré, vérifiez votre courrier.",
+        "error3": "Erreur lors de la réexpédition de l'activation.",
+        "success": "Email confirmé avec succès !",
+        "successResend": "E-mail de confirmation renvoyé avec succès."
+      }
+    },
+    "notifications": {
+      "loginSuccess": "Connexion réussie",
+      "loginError": "Erreur de connexion",
+      "registrationError": "Vous n'avez pas accepté le traitement des données personnelles",
+      "passwordDontMatch": "Les mots de passe ne correspondent pas",
+      "accountCreate": "Compte créé avec succès, vérifiez votre courrier",
+      "mailSend": "Un email a été envoyé à votre boîte de réception",
+      "sendAgain": "Vous pouvez renvoyer l'email dans",
+      "sendAgainSecond": "secondes",
+      "sendAgainButton": "Renvoyer l'email"
+    }
+  },
+  "profile": {
+    "edit": "Modifier",
+    "save": "Enregistrer les modifications",
+    "publish": "Publier",
+    "aboutMe": "À propos de moi",
+    "call": "Appeler",
+    "editProfileLabels": {
+      "name": "Prénom",
+      "lastName": "Nom de famille",
+      "number": "Numéro de téléphone",
+      "location": "Ville"
+    },
+    "navigation": {
+      "myLesson": "Mes leçons",
+      "access": "Accès aux leçons",
+      "favouriteLessons": "Favoris",
+      "myEvents": "Mes événements",
+      "subscribers": "Abonnés",
+      "subscriptions": "Abonnements",
+      "finance": "Finances"
+    },
+    "skeleton": {
+      "noLessons": "Aucune leçon trouvée",
+      "noAccessLessons": "Aucune leçon disponible",
+      "noFavouriteLessons": "Aucun favori"
+    }
+  },
+  "userProfile": {
+    "subscribe": "S'abonner",
+    "subscribed": "Abonné",
+    "aboutMe": "À propos de moi",
+    "navigation": {
+      "lesson": "Leçons",
+      "events": "Événements",
+      "subscribers": "Abonnés",
+      "subscriptions": "Abonnements"
+    }
+  },
+  "player": {
+    "placeholder": "Rechercher",
+    "navigation": {
+      "favourite": "Ajouter aux favoris",
+      "unFavourite": "Retirer",
+      "share": "Partager",
+      "complaint": "Plainte",
+      "subscribe": "S'abonner",
+      "subscribed": "Abonné",
+      "comments": "Commentaires",
+      "placeholder": "Laisser un commentaire",
+      "send": "Envoyer",
+      "replyBtn": "Répondre",
+      "replyText": "Entrez une réponse",
+      "replyCancel": "Annuler",
+      "replySend": "Laisser une réponse",
+      "open": "Ouvrir",
+      "close": "Fermer",
+      "replies": "Réponses"
+    }
+  },
+  "agreement": {
+    "text_1": "J'accepte le traitement des données personnelles",
+    "link_1": "Traitement des données personnelles",
+    "text_2": "et",
+    "link_2": "les conditions d'utilisation"
+  },
+  "seller": {
+    "user": {
+      "fullAccess": "Accès complet à tous les contenus sur la plateforme.",
+      "interaction": "Interaction avec les enseignants.",
+      "access": "Accès à la communauté des utilisateurs.",
+      "noPossibility": "Impossible de télécharger et de vendre vos propres leçons.",
+      "current": "Votre plan actuel"
+    },
+    "seller": {
+      "allPossibility": "Toutes les fonctionnalités de l'UTILISATEUR.",
+      "scale": "Possibilité d'augmenter le stockage à mesure que votre collection de leçons et votre popularité augmentent.",
+      "monetization": "Accès complet aux outils de la plateforme pour la promotion et la monétisation des contenus.",
+      "choice": "Choix du volume de stockage pour les leçons.",
+      "sellDownload": "Possibilité de télécharger et de vendre vos propres leçons.",
+      "volume": "Volume des données téléchargées sur le site",
+      "quantity": "Nombre de mois",
+      "seller": "Passer au vendeur",
+      "month": "mois",
+      "month_3": "mois",
+      "month_6": "mois"
+    }
+  },
+  "publishButton": {
+    "lesson": "Publier le cours",
+    "event": "Publier l'événement",
+    "photo": "Publier la photo"
+  },
+  "default": {
+    "name": "Prénom",
+    "lastName": "Nom",
+    "city": "Ville",
+    "country": "Pays",
+    "mail": "Email",
+    "password": "Mot de passe",
+    "repeatPassword": "Répéter le mot de passe",
+    "Telegram": "Telegram",
+    "soon": "Cette section sera bientôt disponible"
+  },
+  "myRequest": {
+    "title": "Support",
+    "navigation": {
+      "button_1": "Tous",
+      "button_2": "Ouverts",
+      "button_3": "Fermés",
+      "createRequest": "Créer une demande"
+    },
+    "table": {
+      "number": "Numéro",
+      "status": "Statut",
+      "name": "Nom",
+      "createDate": "Date de création",
+      "updateDate": "Date de mise à jour"
+    },
+    "request": {
+      "create": "Créer une demande",
+      "name": "Entrez votre prénom*",
+      "lastName": "Entrez votre nom de famille*",
+      "number": "Entrez votre numéro de téléphone*",
+      "text": "Texte de la demande",
+      "file": "Faites glisser les fichiers ou cliquez sur le bouton ci-dessous pour les sélectionner sur votre appareil",
+      "selectFile": "Sélectionner un fichier",
+      "next": "Suivant"
+    },
+    "chat": {
+      "title": "Chat avec le support",
+      "placeholder": "Écrire un message",
+      "send": "Envoyer"
+    }
+  }
+}

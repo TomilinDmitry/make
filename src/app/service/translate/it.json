@@ -1,0 +1,246 @@
+{
+  "homePage": {
+    "lessonCounter": "Lezioni",
+    "userCounter": "Utenti",
+    "mainText": "LEZIONI DI TRUCCO OVUNQUE NEL MONDO SU QUALSIASI DISPOSITIVO DIGITALE E IN UNA LINGUA COMODA"
+  },
+  "navigation": {
+    "myNews": {
+      "title": "Le mie notizie",
+      "description": "Lezioni ed eventi delle persone che segui"
+    },
+    "myManual": {
+      "title": "I miei documenti",
+      "description": "Pannello di informazioni e documentazione"
+    },
+    "mySupport": {
+      "title": "Il mio supporto",
+      "description": "Servizio di assistenza utenti"
+    },
+    "FAQ": {
+      "title": "Domande frequenti",
+      "description": "Raccolta di risposte alle domande più frequenti su vari argomenti"
+    },
+    "footer": {
+      "publicOffer": "Offerta pubblica",
+      "privacyPolicy": "Informativa sulla privacy",
+      "allRights": "Tutti i diritti riservati"
+    }
+  },
+  "burger": {
+    "user": "Diventa utente",
+    "seller": "Diventa autore",
+    "addProfile": "Aggiungi profilo",
+    "logout": "Esci dal profilo",
+    "viewer": "Sei un visitatore"
+  },
+  "lessonPage": {
+    "filter": {
+      "popular": "Per popolarità",
+      "date": "Per data"
+    },
+    "placeholder": "Cerca",
+    "editButton": "Modifica",
+    "buyButton": "Acquista",
+    "published": "Pubblicato",
+    "shareMenu": {
+      "favourite": "Aggiungi ai preferiti",
+      "unFavourite": "Rimuovi",
+      "share": {
+        "title": "Condividi",
+        "message": "Il link è stato copiato negli appunti"
+      },
+      "notInteresting": {
+        "title": "Non interessante",
+        "lessonDelete": "Lezione rimossa",
+        "Cancel": "Annulla",
+        "tell": {
+          "title": "Dicci perché",
+          "description": "Spiegaci cosa non ti piace di questa lezione e perché non ti interessa",
+          "sendButton": "Invia richiesta di revisione"
+        }
+      },
+      "complaint": "Segnala"
+    }
+  },
+  "userPage": {
+    "placeholderName": "Cerca per nome",
+    "placeholderLocation": "Cerca per località",
+    "notFoundUser": "Utenti non trovati"
+  },
+  "authorization": {
+    "login": {
+      "title": "ACCESSO",
+      "forgot": "Hai dimenticato la password?",
+      "button": "Accedi",
+      "withOutAccount": "Non hai un account?",
+      "registration": "Registrati"
+    },
+    "registration": {
+      "title": "REGISTRAZIONE",
+      "button": "Registrati",
+      "withAccount": "Hai già un account?",
+      "login": "Accedi"
+    },
+    "forgotPassword": {
+      "forgotPasswordText": "Recupero password"
+    },
+    "confirmEmail": {
+      "loading": "Caricamento dati",
+      "confirmEmailText": "",
+      "backOnMainPage": "Torna alla pagina principale",
+      "notification": {
+        "error": "Email non trovata. Prova di nuovo a confermare.",
+        "error2": "Il link di conferma è scaduto, controlla la tua email.",
+        "error3": "Errore durante l'invio della riattivazione.",
+        "success": "Email confermata con successo!",
+        "successResend": "Email di conferma reinviata con successo."
+      }
+    },
+    "notifications": {
+      "loginSuccess": "Accesso avvenuto con successo",
+      "loginError": "Errore durante l'accesso",
+      "registrationError": "Non hai acconsentito al trattamento dei dati personali",
+      "passwordDontMatch": "Le password non corrispondono",
+      "accountCreate": "Account creato con successo, controlla la tua email",
+      "mailSend": "Una email è stata inviata alla tua casella di posta",
+      "sendAgain": "Puoi reinviare l'email in",
+      "sendAgainSecond": "secondi",
+      "sendAgainButton": "Reinvia email"
+    }
+  },
+  "profile": {
+    "edit": "Modifica",
+    "save": "Salva modifiche",
+    "publish": "Pubblica",
+    "aboutMe": "Su di me",
+    "call": "Chiamare",
+    "editProfileLabels": {
+      "name": "Nome",
+      "lastName": "Cognome",
+      "number": "Numero di telefono",
+      "location": "Città"
+    },
+    "navigation": {
+      "myLesson": "Le mie lezioni",
+      "access": "Accesso alle lezioni",
+      "favouriteLessons": "Lezioni preferite",
+      "myEvents": "I miei eventi",
+      "subscribers": "Iscritti",
+      "subscriptions": "Abbonamenti",
+      "finance": "Finanze"
+    },
+    "skeleton": {
+      "noLessons": "Nessuna lezione trovata",
+      "noAccessLessons": "Nessuna lezione disponibile",
+      "noFavouriteLessons": "Nessuna lezione preferita"
+    }
+  },
+  "userProfile": {
+    "subscribe": "Iscriviti",
+    "subscribed": "Iscritto",
+    "aboutMe": "Su di me",
+    "navigation": {
+      "lesson": "Lezioni",
+      "events": "Eventi",
+      "subscribers": "Iscritti",
+      "subscriptions": "Abbonamenti"
+    }
+  },
+  "player": {
+    "placeholder": "Cerca",
+    "navigation": {
+      "favourite": "Aggiungi ai preferiti",
+      "unFavourite": "Rimuovi",
+      "share": "Condividi",
+      "complaint": "Segnala",
+      "subscribe": "Iscriviti",
+      "subscribed": "Iscritto",
+      "comments": "Commenti",
+      "placeholder": "Lascia un commento",
+      "send": "Invia",
+      "replyBtn": "Rispondi",
+      "replyText": "Inserisci una risposta",
+      "replyCancel": "Annulla",
+      "replySend": "Lascia una risposta",
+      "open": "Apri",
+      "close": "Chiudi",
+      "replies": "Risposte"
+    }
+  },
+  "agreement": {
+    "text_1": "Acconsento al trattamento",
+    "link_1": "dei miei dati personali",
+    "text_2": "e",
+    "link_2": "accetto le condizioni dell'offerta"
+  },
+  "seller": {
+    "user": {
+      "fullAccess": "Accesso completo a tutti i materiali sulla piattaforma.",
+      "interaction": "Interazione con gli istruttori.",
+      "access": "Accesso alla comunità di utenti.",
+      "noPossibility": "Impossibile caricare e vendere le proprie lezioni.",
+      "current": "Il tuo piano attuale"
+    },
+    "seller": {
+      "allPossibility": "Tutte le funzionalità dell'UTENTE.",
+      "scale": "Possibilità di scalare lo spazio di archiviazione con la crescita della collezione di lezioni e della popolarità.",
+      "monetization": "Accesso completo agli strumenti della piattaforma per promuovere e monetizzare i contenuti.",
+      "choice": "Scelta del volume di archiviazione per le lezioni.",
+      "sellDownload": "Possibilità di caricare e vendere le proprie lezioni.",
+      "volume": "Volume dei dati caricati sul sito",
+      "quantity": "Numero di mesi",
+      "seller": "Passa a venditore",
+      "month": "mese",
+      "month_3": "mesi",
+      "month_6": "mesi"
+    }
+  },
+  "publishButton": {
+    "lesson": "Pubblica lezione",
+    "event": "Pubblica evento",
+    "photo": "Pubblica foto"
+  },
+  "default": {
+    "name": "Nome",
+    "lastName": "Cognome",
+    "city": "Città",
+    "country": "Paese",
+    "mail": "Email",
+    "password": "Password",
+    "repeatPassword": "Ripeti Password",
+    "Telegram": "Telegram",
+    "soon": "Questa scheda sarà disponibile presto"
+  },
+  "myRequest": {
+    "title": "Supporto",
+    "navigation": {
+      "button_1": "Tutti",
+      "button_2": "Aperti",
+      "button_3": "Chiusi",
+      "createRequest": "Crea una richiesta"
+    },
+    "table": {
+      "number": "Numero",
+      "status": "Stato",
+      "name": "Nome",
+      "createDate": "Data di creazione",
+      "updateDate": "Data di aggiornamento"
+    },
+    "request": {
+      "create": "Crea una richiesta",
+      "name": "Inserisci il tuo nome*",
+      "lastName": "Inserisci il tuo cognome*",
+      "number": "Inserisci il tuo numero di telefono*",
+      "text": "Testo della richiesta",
+      "file": "Trascina i file o clicca sul pulsante qui sotto per selezionarli sul tuo dispositivo",
+      "selectFile": "Seleziona file",
+      "next": "Avanti"
+    },
+    "chat": {
+      "title": "Chat con il supporto",
+      "placeholder": "Scrivi un messaggio",
+      "send": "Invia"
+    }
+  }
+}

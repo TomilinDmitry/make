@@ -1,0 +1,381 @@
+@import "/src/app/styles/variables";
+
+.wrapper {
+  width: 100%;
+  .topBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.042vw;
+    .helpTitle {
+      font-size: 2.083vw;
+      margin: 0;
+      font-weight: 700;
+      color: #0294a1;
+      line-height: 2.865vw;
+    }
+    .reference {
+      color: #818181;
+      font-size: 1.146vw;
+      line-height: 1.563vw;
+    }
+  }
+  .supportNavigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.042vw;
+    .leftButtons {
+      display: flex;
+      gap: 0.781vw;
+      .button {
+        box-shadow: 0px 2px 16px 0px #15137140;
+        background: white;
+        border-radius: 1.563vw;
+        height: 1.875vw;
+        padding: 0px 0.781vw;
+        width: max-content;
+        gap: 0.781vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 0.729vw;
+        min-width: 4.688vw;
+        font-weight: 600;
+        font-family: $primary_font;
+        cursor: pointer;
+      }
+      .buttonActive {
+        @extend .button;
+        background: #0294a1;
+        color: white;
+      }
+    }
+    .create {
+      max-width: 15.104vw;
+      width: 100%;
+      font-size: 0.938vw;
+      border-radius: 1.563vw;
+      border: none;
+      outline: none;
+      color: white;
+      background: linear-gradient(
+        270deg,
+        #191281 0%,
+        #0092a0 53.5%,
+        #03ad1e 100%
+      );
+      box-shadow: 0.052vw 0.104vw 0.99vw 0px #142f8840;
+      cursor: pointer;
+    }
+  }
+  .table {
+    width: 100%;
+    box-shadow: 0.052vw 0.104vw 0.521vw 0px #190f7c40;
+    border-radius: 0.781vw 0.781vw 0.521vw 0.521vw;
+    .tableHeader {
+      background: $gradient_color;
+      color: white;
+      max-height: 1.823vw;
+      .headerElement {
+        height: 100%;
+        padding: 0.339vw 0px;
+        font-size: 0.625vw;
+      }
+      .headerElement:first-child {
+        border-radius: 0.781vw 0px 0px 0px;
+        padding: 0px 1.042vw;
+      }
+      .headerElement:nth-child(2) {
+        padding: 0px 1.042vw;
+      }
+      .headerElement:nth-child(4) {
+        padding: 0px 1.042vw;
+        // width: 150px;
+      }
+      .headerElement:nth-child(5) {
+        padding: 0px 1.042vw;
+        // width: 150px;
+      }
+
+      .headerElement:last-child {
+        border-radius: 0px 0.781vw 0px 0px;
+      }
+    }
+    .row {
+      text-align: center;
+      .cell {
+        border-right: 0.052vw solid #d9d9d9;
+        border-bottom: 0.052vw solid #d9d9d9;
+        padding: 0.521vw 0.26vw;
+        color: #616161;
+        font-size: 0.833vw;
+      }
+      .cell:first-child {
+        background-image: $gradient_color;
+        font-family: $primary_font;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+      }
+      .cell:nth-child(3) {
+        text-align: left;
+        font-size: 0.625vw;
+        color: #616161;
+
+        min-width: 10.417vw;
+      }
+      .cell:nth-child(4) {
+        width: 7.813vw;
+        // width: 100%;
+      }
+      .cell:nth-child(5) {
+        width: 7.813vw;
+        // width: 100%;
+      }
+    }
+  }
+
+  .blurBg {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    backdrop-filter: blur(0.521vw);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .wrapper {
+    width: 100%;
+    .topBlock {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      .helpTitle {
+        font-size: 24px;
+        margin: 0;
+        font-weight: 700;
+        color: #0294a1;
+        line-height: 24px;
+      }
+      .reference {
+        color: #818181;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+    .supportNavigation {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 20px;
+      .leftButtons {
+        display: flex;
+        gap: 15px;
+        .button {
+          box-shadow: 0px 2px 16px 0px #15137140;
+          background: white;
+          border-radius: 30px;
+          height: 30px;
+          padding: 0px 10px;
+          width: max-content;
+          gap: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: none;
+          outline: none;
+          color: black;
+          font-size: 14px;
+          min-width: 90px;
+          font-weight: 600;
+          font-family: $primary_font;
+          cursor: pointer;
+        }
+        .buttonActive {
+          background: #0294a1;
+          color: white;
+        }
+      }
+      .create {
+        max-width: max-content;
+        width: 100%;
+        padding: 0px 10px;
+        font-size: 14px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        color: white;
+        font-family: $primary_font;
+
+        background: linear-gradient(
+          270deg,
+          #191281 0%,
+          #0092a0 53.5%,
+          #03ad1e 100%
+        );
+        box-shadow: 0.76px 1.52px 18.98px 0px #142f8840;
+        cursor: pointer;
+      }
+    }
+    .table {
+      width: 100%;
+      box-shadow: 1px 2px 10px 0px #190f7c40;
+      border-radius: 15px 15px 10px 10px;
+      .tableHeader {
+        background: $gradient_color;
+        color: white;
+        max-height: 30px;
+        .headerElement {
+          height: 100%;
+          padding: 0px 0px;
+          font-size: 14px;
+        }
+        .headerElement:first-child {
+          border-radius: 15px 0px 0px 0px;
+          padding: 0px 20px;
+        }
+        .headerElement:nth-child(2) {
+          padding: 0px 20px;
+        }
+        .headerElement:nth-child(4) {
+          padding: 0px 20px;
+          // width: 150px;
+        }
+        .headerElement:nth-child(5) {
+          padding: 0px 20px;
+          // width: 150px;
+        }
+
+        .headerElement:last-child {
+          border-radius: 0px 15px 0px 0px;
+        }
+      }
+      .row {
+        text-align: center;
+        .cell {
+          border-right: 1px solid #d9d9d9;
+          border-bottom: 1px solid #d9d9d9;
+          padding: 5px;
+          color: #616161;
+          font-size: 14px;
+        }
+        .cell:first-child {
+          background-image: $gradient_color;
+          font-family: $primary_font;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          cursor: pointer;
+        }
+        .cell:nth-child(3) {
+          text-align: left;
+          font-size: 14px;
+          color: #616161;
+
+          min-width: 200px;
+        }
+        .cell:nth-child(4) {
+          width: 150px;
+          // width: 100%;
+        }
+        .cell:nth-child(5) {
+          width: 150px;
+          // width: 100%;
+        }
+      }
+    }
+
+    .blurBg {
+      position: fixed;
+      width: 100vw;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 30;
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+  }
+}
+.adaptiveSupport {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+    display: none;
+  }
+  .adaptiveSupport {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .wrapper {
+    .supportNavigation {
+      .create {
+        max-width: 132px;
+        font-size: 12px;
+      }
+      .leftButtons {
+        gap: 5px;
+        .button {
+          font-size: 12px;
+          padding: 0px 10px;
+          min-width: 42px;
+          height: 24px;
+        }
+      }
+    }
+    .topBlock {
+      margin-bottom: 5px;
+      .helpTitle {
+        font-size: 20px;
+        line-height: 35px;
+        font-weight: 700;
+      }
+      .reference {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper {
+    .supportNavigation {
+      .create {
+        max-width: 132px;
+        font-size: 9px;
+      }
+      .leftButtons {
+        gap: 5px;
+        .button {
+          font-size: 9px;
+          padding: 0px 10px;
+          min-width: 42px;
+          height: 24px;
+        }
+      }
+    }
+    .topBlock {
+      margin-bottom: 5px;
+      .helpTitle {
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 700;
+      }
+      .reference {
+        display: none;
+      }
+    }
+  }
+}

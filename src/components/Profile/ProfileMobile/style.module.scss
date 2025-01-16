@@ -1,0 +1,317 @@
+@import "../../../app/styles/variables";
+.wrapper {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  .imageProfile {
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+    margin-bottom: 5px;
+    height: 140px;
+  }
+  .name {
+    position: relative;
+
+    margin-bottom: 5px;
+    background-image: $gradient_color;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 24px;
+      font-family: $secondary_font;
+    }
+  }
+  .infoBlock {
+    margin-bottom: 5px;
+    .box_loc_vid_view {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      p {
+        margin: 0;
+      }
+    }
+
+    .location {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 5px;
+      font-family: $primary_font;
+      font-size: 14px;
+      font-weight: 400;
+      img {
+        height: 15px;
+      }
+    }
+    .locationText {
+      line-height: 14px;
+    }
+
+    .videos_view {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 15px;
+      max-height: 24px;
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .vid_see {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-family: $primary_font;
+      font-weight: 400;
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+    .vid_counter {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      .vid_counter_img {
+        width: 15px;
+        height: 18px;
+      }
+    }
+  }
+
+  .buttonsContainer {
+    // max-width: 580px;
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 40px;
+  }
+
+  .editButton {
+    max-width: 580px;
+
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    background: linear-gradient(
+      89.45deg,
+      #05ad25 0.48%,
+      #0294a1 73.77%,
+      #181381 147.06%
+    );
+    box-shadow: 1px 2px 25px 0px rgba(20, 47, 136, 0.25);
+    border: none;
+    outline: none;
+    .editButtonText {
+      color: white;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 500;
+      font-family: $primary_font;
+    }
+    &:hover {
+      scale: 1.01;
+    }
+  }
+  .editButtonOpen {
+    @extend .editButton;
+  }
+  .changeNameButton {
+    @extend .editButton;
+    margin-bottom: 10px;
+  }
+  .notChangeNameButton {
+    display: none;
+  }
+  .publishedButton {
+    @extend .editButton;
+    margin-bottom: 5px;
+  }
+  .changeNameModal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    left: 0;
+    top: 0;
+  }
+  .button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    box-shadow: 1px 2px 25px 0px rgba(20, 47, 136, 0.25);
+    margin: 0;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    padding: 0;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 580px;
+    &:hover {
+      scale: 1.01;
+    }
+  }
+  .buttonEvent {
+    @extend .button;
+    background: #c7c7c7;
+    cursor: not-allowed;
+  }
+  .btn_text {
+    font-family: $primary_font;
+    font-size: 16px;
+    background-size: 100%;
+    background-image: $gradient_color;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .btn_text__Event {
+    font-family: $primary_font;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .active_button {
+    background-image: $gradient_color;
+  }
+
+  .btn_text_active {
+    background-image: none;
+    -webkit-text-fill-color: $primary_color;
+  }
+}
+
+.info_me {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  position: relative;
+}
+.info_me_isEditing {
+  @extend .info_me;
+  max-width: 580px;
+  width: 100%;
+}
+
+.title_me {
+  font-family: $primary_font;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 600;
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 5px;
+  line-height: 30px;
+}
+
+.text_me {
+  font-family: $primary_font;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-size: 12px;
+  word-break: break-word;
+  max-height: 70px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.description {
+  width: 100%;
+  height: 141px;
+  border-radius: 10px;
+  background: rgba(240, 240, 240, 1);
+  resize: none;
+  outline: none;
+  border: none;
+  padding: 15px 20px;
+  font-family: $primary_font;
+}
+.textareaContainer {
+  max-width: calc(100% - 50px);
+  width: 100%;
+  max-height: 171px;
+  height: 100%;
+}
+
+.open {
+  margin: 0;
+  font-family: $primary_font;
+  font-size: 12px;
+  max-height: 160px;
+  overflow: auto;
+  overflow-y: none;
+  margin-bottom: 10px;
+}
+
+.buttonDescContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40px;
+  z-index: 10;
+}
+.openDesc {
+  cursor: pointer;
+  margin: 0;
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.002);
+  box-shadow: 0px 0px 0px 1px rgba(225, 225, 225, 1) inset;
+  background: transparent;
+  width: 62px;
+  border-radius: 30px;
+}
+
+.navigation {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+  height: 80px;
+  left: 0;
+}
+.openNavigation {
+  @extend .navigation;
+  // top: 190px;
+}
+
+@media screen and (max-width: 450px) {
+  .buttonDescContainer {
+    margin-bottom: 40px;
+  }
+  .info_me {
+    margin-bottom: 50px;
+  }
+}

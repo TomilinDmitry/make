@@ -1,0 +1,244 @@
+@import "/src/app/styles/variables";
+.wrapper {
+  // height: 610px;
+  // nwidth: 420px;
+  max-width: 345px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  .titleBlock {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    // background: #03ad1e;
+    // max-width: 278px;
+    // height: 95px;
+    border-radius: 10px;
+    // position: absolute;
+    // top: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+
+    .title {
+      margin: 0;
+      font-size: 26px;
+      font-family: $secondary_font;
+      color: #0294a1;
+      font-weight: 700;
+    }
+  }
+  .sellerTitleBlock {
+    @extend .titleBlock;
+    background: linear-gradient(
+      270deg,
+      #191281 30.32%,
+      #0092a0 82.62%,
+      #03ad1e 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    gap: 5px;
+    .subtitle {
+      // background: white;
+
+      font-size: 26px;
+      border-radius: 10px;
+      font-weight: 700;
+      margin-top: 0px;
+      padding: 2px 6px;
+    }
+  }
+  // .sellerProTitleBlock {
+  //   @extend .titleBlock;
+  //   background: #181381;
+  //   gap: 5px;
+  //   .subtitle {
+  //     background: white;
+  //     color: #181381;
+  //     font-size: 26px;
+  //     border-radius: 10px;
+  //     font-weight: 700;
+  //     margin-top: 0px;
+  //     padding: 2px 6px;
+  //   }
+  // }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 5px;
+    margin-bottom: 12px;
+  }
+  .listElement {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    align-items: baseline;
+    img {
+      margin-bottom: 10px;
+    }
+  }
+  .container {
+    padding: 35px 35px 50px 35px;
+    width: 100%;
+    height: calc(100% - 85px);
+    background: #ffffff;
+    box-shadow: 1px 2px 10px 0px #16258640;
+    border-radius: 15px;
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      // max-height: 430px;
+      height: 100%;
+      .language {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #0a0a0a;
+      }
+      .button {
+        // max-width: 200px;
+        max-height: 30px;
+        height: 30px;
+        width: 100%;
+        border: 1px solid;
+        cursor: pointer;
+
+        background: #8e8e8e;
+        border: none;
+        outline: none;
+        box-shadow: 1px 2px 25px 0px #142f8840;
+        color: white;
+        font-family: $primary_font;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .buttonSeller {
+        @extend .button;
+        background: linear-gradient(
+          300deg,
+          #191281 15.32%,
+          #0092a0 45.62%,
+          #03ad1e 100%
+        );
+        height: 30px;
+      }
+      .availableContainer {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+      }
+      .bottomContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+        justify-content: space-between;
+        gap: 15px;
+        width: 100%;
+        .selector {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          padding: 6px 10px;
+          background: rgba(246, 246, 246, 1);
+          border-radius: 10px;
+          gap: 5px;
+          width: calc(100% - 20px);
+        }
+        .rangeLabel {
+          display: flex;
+          position: relative;
+          text-align: left;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 15px;
+          color: black;
+          font-weight: 800;
+          left: 0;
+          top: 0;
+        }
+        .text {
+          font-size: 12px;
+          line-height: 19px;
+          color: #7c7c7c;
+          font-weight: 500;
+          // margin-bottom: 10px;
+        }
+        .select {
+          display: flex;
+          width: auto;
+          border: none;
+          border-top: 1px solid #d9d9d9;
+          padding: 5px;
+          outline: none;
+          background: transparent;
+          font-family: $primary_font;
+          font-size: 12px;
+          text-align: left;
+          font-weight: 500;
+          justify-content: space-between;
+          .top {
+            transform: rotate(180deg);
+            transition: 0.7s all;
+            width: 15px;
+          }
+          .bottom {
+            transition: 0.7s all;
+            transform: rotate(0deg);
+            width: 15px;
+          }
+        }
+        .selectedBlock {
+          margin: 0;
+          padding: 0;
+          .title {
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+        .selectedTariff {
+          background: linear-gradient(
+            270deg,
+            #191281 30.32%,
+            #0092a0 82.62%,
+            #03ad1e 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        .option {
+          cursor: pointer;
+          text-align: left;
+          font-size: 12px;
+          font-weight: 600;
+          padding: 5px;
+          &:hover {
+            background: rgba(217, 217, 217, 1);
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+  .modalContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+  }
+}

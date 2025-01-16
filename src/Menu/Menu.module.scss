@@ -1,0 +1,49 @@
+@import "/src/app/styles/variables";
+.box_menu {
+  position: absolute;
+  right: 0;
+  left: 77%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 120px;
+  background-color: rgba(88, 88, 88, 0.4);
+  padding: 40px;
+  border-radius: 10px;
+  gap: 10px;
+  width: 250px;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.box_menu_active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.list_section {
+  font-size: 1rem;
+  font-family: $primary-font;
+}
+
+.box_menu::before,
+.box_menu::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  border: 10px solid transparent;
+}
+
+.box_menu::before {
+  top: -20px;
+  border-bottom: 10px solid rgba(88, 88, 88, 0.4);
+}
+
+.box_menu::after {
+  top: -19px;
+  border-bottom: 10px solid rgba(88, 88, 88, 0.4);
+}

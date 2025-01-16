@@ -1,0 +1,419 @@
+@import "/src/app/styles/variables";
+
+.profile_box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 16.034vw;
+  height: auto;
+  width: 100%;
+  bottom: 11.458vw;
+  left: 2.083vw;
+  border-radius: 1.042vw;
+  box-shadow: 2px 4px 10px 0px rgba(25, 18, 129, 0.25);
+  margin-bottom: 2.084vw;
+}
+.loadImage {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.box_name_mobile {
+  display: none;
+}
+
+.profile_img_box {
+  height: 16.034vw;
+  width: 16.034vw;
+}
+.img_me {
+  max-width: 16.034vw;
+  width: 100%;
+  max-height: 16.034vw;
+  height: 100%;
+}
+.username_box {
+  z-index: 10;
+  text-align: start;
+  position: absolute;
+  top: 0px;
+  left: 18.2vw;
+  width: 41.65vw;
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 1.042vw;
+  width: 100%;
+  font-size: 4.165vw;
+  font-family: $secondary_font;
+  font-weight: 700;
+  line-height: 4.165vw;
+  margin: 0;
+  color: rgba(255, 255, 255, 1);
+  .usernameLang {
+    display: flex;
+    gap: 10px;
+  }
+}
+.containerInfo {
+  padding: 1.042vw 0.526vw;
+  p {
+    margin: 0;
+  }
+}
+.box_loc_vid_view {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.781vw;
+  margin-bottom: 0.781vw;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.526vw;
+  font-family: $primary_font;
+  font-weight: 500;
+  img {
+    width: 0.885vw;
+    height: 1.25vw;
+  }
+}
+.locationText {
+  font-size: 0.833vw;
+  line-height: 1.562vw;
+  font-weight: 500;
+}
+
+.videos_view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2.3426vw;
+  max-height: 1.2494vw;
+  img {
+    width: 1.458vw;
+    height: 1.094vw;
+  }
+}
+
+.vid_see {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.526vw;
+  font-size: 0.833vw;
+  font-family: $primary_font;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.526vw;
+  margin-bottom: 1.562vw;
+}
+
+.editButton {
+  max-width: 19.688vw;
+  width: 100%;
+  padding: 0.26vw;
+  margin-bottom: 0.365vw;
+  border-radius: 1.302vw;
+  cursor: pointer;
+
+  background: linear-gradient(
+    89.45deg,
+    #05ad25 0.48%,
+    #0294a1 73.77%,
+    #181381 147.06%
+  );
+  box-shadow: 1px 2px 25px 0px rgba(20, 47, 136, 0.25);
+  border: none;
+  outline: none;
+
+  .editButtonText {
+    font-family: $primary_font;
+    color: white;
+    font-size: 0.833vw;
+    line-height: 1.563vw;
+    font-weight: 500;
+  }
+  &:hover {
+    scale: 1.01;
+  }
+}
+.editButtonOpen {
+  @extend .editButton;
+}
+.changeNameButton {
+  @extend .editButton;
+}
+.notChangeNameButton {
+  display: none;
+}
+.button {
+  cursor: pointer;
+  border-radius: 1.302vw;
+  box-shadow: 1px 2px 25px 0px rgba(20, 47, 136, 0.25);
+  border: none;
+  padding: 0.677vw;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  &:hover {
+    scale: 1.01;
+  }
+}
+.buttonEvent {
+  @extend .button;
+  background: #c7c7c7;
+  cursor: not-allowed;
+}
+
+.btn_text {
+  font-family: $primary_font;
+  font-size: 1.146vw;
+  background-size: 100%;
+  background-image: $gradient_color;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn_text__Event {
+  font-family: $primary_font;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.active_button {
+  background-image: $gradient_color;
+}
+
+.btn_text_active {
+  background-image: none;
+  -webkit-text-fill-color: $primary_color;
+}
+
+.info_me {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.title_me {
+  font-family: $primary_font;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  margin: 0;
+  font-size: 0.938vw;
+  margin-bottom: 0.26vw;
+  line-height: 1.563vw;
+  margin-left: 0.521vw;
+}
+.titleRight {
+  @extend .title_me;
+}
+
+.text_me {
+  font-family: $primary_font;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-size: 0.833vw;
+  max-width: 18.229vw;
+  width: 100%;
+  word-break: break-word;
+}
+.description {
+  width: 100%;
+  height: 7.344vw;
+  border-radius: 0.521vw;
+  background: rgba(240, 240, 240, 1);
+  resize: none;
+  outline: none;
+  border: none;
+  padding: 0.781vw 1.042vw;
+  font-size: 0.729vw;
+}
+.textareaContainer {
+  max-width: 12.76vw;
+  width: 100%;
+  max-height: 8.906vw;
+  height: 100%;
+}
+@media screen and (max-width: 1920px) {
+  .profile_box {
+    max-width: 308px;
+    height: auto;
+    width: 100%;
+    bottom: 90px;
+    left: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 10px 0px rgba(25, 18, 129, 0.25);
+    margin-bottom: 40px;
+  }
+  .profile_img_box {
+    height: 308px;
+    width: 308px;
+  }
+  .img_me {
+    max-width: 308px;
+    max-height: 308px;
+  }
+  .username_box {
+    top: 14px; // в
+    left: 360px;
+    width: 800px;
+  }
+
+  .username {
+    gap: 0px;
+    font-size: 3.167vw;
+    line-height: 75px;
+    margin: 0;
+  }
+  .containerInfo {
+    padding: 10px;
+    p {
+      margin: 0;
+      margin-left: 0px;
+    }
+  }
+  .box_loc_vid_view {
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .location {
+    gap: 5px;
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .locationText {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .videos_view {
+    gap: 10px;
+    max-height: 24px;
+    img {
+      width: 18px;
+      height: 15px;
+    }
+  }
+
+  .vid_see {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .buttons {
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .editButton {
+    max-width: 378px;
+    padding: 5px;
+    height: 30px;
+    margin-bottom: 7px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .editButtonText {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &:hover {
+      scale: 1.01;
+    }
+  }
+  .editButtonOpen {
+    margin-bottom: 5px;
+  }
+  .changeNameButton {
+    margin-bottom: 20px;
+  }
+  .button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 378px;
+    padding: 5px;
+    height: 30px;
+    margin-bottom: 7px;
+    border-radius: 25px;
+    &:hover {
+      scale: 1.01;
+    }
+  }
+  .buttonEvent {
+    cursor: not-allowed;
+    &:hover {
+      scale: none;
+    }
+  }
+
+  .btn_text {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .title_me {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    margin-left: 0px;
+  }
+  .titleRight {
+    margin-left: 20px;
+  }
+
+  .text_me {
+    margin-left: 10px;
+    font-size: 14px;
+    max-width: 265px;
+  }
+  .description {
+    height: 141px;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-family: $primary_font;
+  }
+  .textareaContainer {
+    max-width: 245px;
+    max-height: 171px;
+  }
+  .changeNameModal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    left: 0;
+    top: 0;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .username {
+    font-size: 4.167vw;
+  }
+}

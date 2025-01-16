@@ -1,0 +1,246 @@
+{
+  "homePage": {
+    "lessonCounter": "Dersler",
+    "userCounter": "Kullanıcılar",
+    "mainText": "DÜNYANIN HERHANGİ BİR YERİNDE, HERHANGİ BİR DİJİTAL CİHAZDA VE İLGİLİ DİLDE MAKYAJ DERSLERİ"
+  },
+  "navigation": {
+    "myNews": {
+      "title": "Haberlerim",
+      "description": "Abone olduğum kişilerin dersleri ve etkinlikleri"
+    },
+    "myManual": {
+      "title": "Belgelerim",
+      "description": "Özellikler ve belgeleri içeren panolar"
+    },
+    "mySupport": {
+      "title": "Destek",
+      "description": "Kullanıcı destek hizmeti"
+    },
+    "FAQ": {
+      "title": "SSS",
+      "description": "Herhangi bir konu hakkında sık sorulan sorular ve yanıtlar"
+    },
+    "footer": {
+      "publicOffer": "Açık Teklif",
+      "privacyPolicy": "Gizlilik Politikası",
+      "allRights": "Tüm hakları saklıdır"
+    }
+  },
+  "burger": {
+    "user": "Kullanıcı Ol",
+    "seller": "Yazar Ol",
+    "addProfile": "Profil Ekle",
+    "logout": "Çıkış Yap",
+    "viewer": "Ziyaretçisiniz"
+  },
+  "lessonPage": {
+    "filter": {
+      "popular": "Popülerlik sırasına göre",
+      "date": "Tarihe göre"
+    },
+    "placeholder": "Ara",
+    "editButton": "Düzenle",
+    "buyButton": "Satın Al",
+    "published": "Yayınlanmış",
+    "shareMenu": {
+      "favourite": "Favorilere ekle",
+      "unFavourite": "Kaldır",
+      "share": {
+        "title": "Paylaş",
+        "message": "Bağlantı panoya kopyalandı"
+      },
+      "notInteresting": {
+        "title": "İlginç değil",
+        "lessonDelete": "Ders silindi",
+        "Cancel": "İptal",
+        "tell": {
+          "title": "Nedenini söyle",
+          "description": "Bu derse neden ilgi duymadığınızı ve neyi beğenmediğinizi bizimle paylaşın",
+          "sendButton": "İnceleme isteğini gönder"
+        }
+      },
+      "complaint": "Şikayet"
+    }
+  },
+  "userPage": {
+    "placeholderName": "İsimle Ara",
+    "placeholderLocation": "Konumla Ara",
+    "notFoundUser": "Kullanıcılar bulunamadı"
+  },
+  "authorization": {
+    "login": {
+      "title": "Giriş Yap",
+      "forgot": "Şifrenizi mi unuttunuz?",
+      "button": "Giriş Yap",
+      "withOutAccount": "Hesabınız yok mu?",
+      "registration": "Kayıt Ol"
+    },
+    "registration": {
+      "title": "Kayıt Ol",
+      "button": "Kayıt Ol",
+      "withAccount": "Zaten hesabınız var mı?",
+      "login": "Giriş Yap"
+    },
+    "forgotPassword": {
+      "forgotPasswordText": "Şifre kurtarma"
+    },
+    "confirmEmail": {
+      "loading": "Veriler yükleniyor",
+      "confirmEmailText": "",
+      "backOnMainPage": "Ana sayfaya dön",
+      "notification": {
+        "error": "E-posta bulunamadı. Lütfen onayı tekrar deneyin.",
+        "error2": "Onay bağlantısının süresi doldu, e-postanızı kontrol edin.",
+        "error3": "Aktivasyon yeniden gönderilirken hata oluştu.",
+        "success": "E-posta başarıyla onaylandı!",
+        "successResend": "Onay e-postası başarıyla yeniden gönderildi."
+      }
+    },
+    "notifications": {
+      "loginSuccess": "Başarıyla giriş yapıldı",
+      "loginError": "Giriş hatası",
+      "registrationError": "Kişisel veri işleme onayını vermediniz",
+      "passwordDontMatch": "Şifreler eşleşmiyor",
+      "accountCreate": "Hesap başarıyla oluşturuldu, e-postanızı kontrol edin",
+      "mailSend": "Posta kutunuza bir e-posta gönderildi",
+      "sendAgain": "E-postayı yeniden gönderebilirsiniz",
+      "sendAgainSecond": "saniye içinde",
+      "sendAgainButton": "E-postayı yeniden gönder"
+    }
+  },
+  "profile": {
+    "edit": "Düzenle",
+    "save": "Değişiklikleri Kaydet",
+    "publish": "Yayınla",
+    "aboutMe": "Hakkımda",
+    "call": "Ara",
+    "editProfileLabels": {
+      "name": "İsim",
+      "lastName": "Soyadı",
+      "number": "Telefon Numarası",
+      "location": "Şehir"
+    },
+    "navigation": {
+      "myLesson": "Derslerim",
+      "access": "Derslere Erişim",
+      "favouriteLessons": "Favori Dersler",
+      "myEvents": "Etkinliklerim",
+      "subscribers": "Aboneler",
+      "subscriptions": "Abonelikler",
+      "finance": "Finans"
+    },
+    "skeleton": {
+      "noLessons": "Ders bulunamadı",
+      "noAccessLessons": "Erişilebilecek ders yok",
+      "noFavouriteLessons": "Favori ders yok"
+    }
+  },
+  "userProfile": {
+    "subscribe": "Abone Ol",
+    "subscribed": "Abone Oldunuz",
+    "aboutMe": "Hakkımda",
+    "navigation": {
+      "lesson": "Dersler",
+      "events": "Etkinlikler",
+      "subscribers": "Aboneler",
+      "subscriptions": "Abonelikler"
+    }
+  },
+  "player": {
+    "placeholder": "Ara",
+    "navigation": {
+      "favourite": "Favorilere ekle",
+      "unFavourite": "Kaldır",
+      "share": "Paylaş",
+      "complaint": "Şikayet",
+      "subscribe": "Abone Ol",
+      "subscribed": "Abone Oldunuz",
+      "comments": "Yorumlar",
+      "placeholder": "Yorum bırak",
+      "send": "Gönder",
+      "replyBtn": "Cevapla",
+      "replyText": "Bir cevap girin",
+      "replyCancel": "İptal",
+      "replySend": "Bir cevap bırak",
+      "open": "Aç",
+      "close": "Kapat",
+      "replies": "Cevaplar"
+    }
+  },
+  "agreement": {
+    "text_1": "Kişisel verilerin işlenmesini kabul ediyorum",
+    "link_1": "Kişisel veri işleme",
+    "text_2": "ve",
+    "link_2": "Kullanım Koşullarını kabul ediyorum"
+  },
+  "seller": {
+    "user": {
+      "fullAccess": "Platformadaki tüm materyallere tam erişim.",
+      "interaction": "Eğitmenlerle etkileşim.",
+      "access": "Kullanıcı topluluğuna erişim.",
+      "noPossibility": "Kendi derslerinizi yükleme ve satma imkanı yok.",
+      "current": "Mevcut planınız"
+    },
+    "seller": {
+      "allPossibility": "KULLANICI özelliklerinin tamamı.",
+      "scale": "Ders koleksiyonunuz ve popülariteniz büyüdükçe depolama alanını artırma imkanı.",
+      "monetization": "İçeriği tanıtmak ve gelir elde etmek için platform araçlarına tam erişim.",
+      "choice": "Dersler için depolama alanı seçimi.",
+      "sellDownload": "Kendi derslerinizi yükleme ve satma imkanı.",
+      "volume": "Siteye yüklenen veri miktarı",
+      "quantity": "Ay sayısı",
+      "seller": "Satıcıya geçiş yap",
+      "month": "ay",
+      "month_3": "ay",
+      "month_6": "ay"
+    }
+  },
+  "publishButton": {
+    "lesson": "Ders yayınla",
+    "event": "Etkinlik yayınla",
+    "photo": "Fotoğraf yayınla"
+  },
+  "default": {
+    "name": "Ad",
+    "lastName": "Soyad",
+    "city": "Şehir",
+    "country": "Ülke",
+    "mail": "E-posta",
+    "password": "Şifre",
+    "repeatPassword": "Şifreyi tekrar et",
+    "Telegram": "Telegram",
+    "soon": "Bu sekme yakında gelecek"
+  },
+  "myRequest": {
+    "title": "Destek",
+    "navigation": {
+      "button_1": "Tümü",
+      "button_2": "Açık",
+      "button_3": "Kapalı",
+      "createRequest": "Talep oluştur"
+    },
+    "table": {
+      "number": "Numara",
+      "status": "Durum",
+      "name": "Adı",
+      "createDate": "Oluşturma tarihi",
+      "updateDate": "Güncelleme tarihi"
+    },
+    "request": {
+      "create": "Talep oluştur",
+      "name": "Adınızı girin*",
+      "lastName": "Soyadınızı girin*",
+      "number": "Telefon numaranızı girin*",
+      "text": "Talep metni",
+      "file": "Dosyaları sürükleyin veya cihazınızdaki dosyaları seçmek için aşağıdaki düğmeye tıklayın",
+      "selectFile": "Dosya seç",
+      "next": "İleri"
+    },
+    "chat": {
+      "title": "Destek ile sohbet",
+      "placeholder": "Bir mesaj yaz",
+      "send": "Gönder"
+    }
+  }
+}

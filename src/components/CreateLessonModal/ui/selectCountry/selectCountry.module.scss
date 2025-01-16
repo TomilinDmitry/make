@@ -1,0 +1,16 @@
+.selected {
+  box-sizing: border-box;
+  border-image-slice: 10; /* border-radius*2 */
+  border-image-repeat: round;
+  border-image-width: 10px; /* border-radius*2 */
+  border-image-source: url("../../../../app/assets/createLessonModal/borderCountry.png");
+  cursor: pointer;
+}
+.imageContainer {
+  display: flex;
+  gap: 12px;
+}
+.image {
+  width: 41px;
+  height: 41px;
+}

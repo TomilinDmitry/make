@@ -1,0 +1,249 @@
+@import "/src/app/styles/variables";
+
+.mainBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  //   max-width: 536px;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 100%;
+}
+
+.loadImage {
+  background: rgba(240, 240, 240, 1);
+  height: max-content;
+  // height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+  max-width: 536px;
+}
+.loadContainer {
+  max-height: 372px;
+  background: rgba(240, 240, 240, 1);
+  border-radius: 10px;
+}
+.placeholderContainer {
+  height: 205px;
+  border-radius: 10px;
+}
+.placeholderContainer.dragActive {
+  background: $gradient_color; /* Подсветка зоны при наведении */
+  border-color: #009688;
+  color: white;
+}
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-align: center;
+}
+.loadImage.dragActive {
+  background: $gradient_color; /* Подсветка зоны при наведении */
+  border-color: #009688;
+  color: white;
+}
+.imageContainer {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  .previewImage {
+    height: 300px;
+    // height: 300px;
+    margin-top: 0;
+    border-radius: 10px;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  .imageName {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 8px 0px 0px 0px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .fileInfo {
+    margin: 0;
+    width: 100%;
+    max-width: 350px;
+    overflow: hidden;
+  }
+  .fileSize {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .changeImage {
+    border: none;
+    padding: 0;
+    background: rgba(217, 217, 217, 1);
+    border-radius: 10px;
+    cursor: pointer;
+    div {
+      padding: 10px 0px;
+      display: flex;
+      gap: 10px;
+      margin: 0px 10px;
+      color: black;
+      font-family: $primary_font;
+      font-size: 16px;
+    }
+  }
+}
+.selections {
+  display: flex;
+  gap: 15px;
+}
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: $primary_font;
+  margin: 0;
+}
+.customSelect {
+  box-shadow: 0px 2px 16px 0px rgba(21, 19, 113, 0.25);
+  border-radius: 30px;
+  padding: 0;
+  height: 30px;
+  display: flex;
+}
+.default {
+  border: none;
+  outline: none;
+  background-image: $gradient_color;
+  font-family: $primary_font;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 14px;
+  max-width: max-content;
+  width: 100%;
+  height: 30px;
+  padding: 0;
+  span {
+    margin: 0px 30px;
+    font-family: $primary_font;
+  }
+}
+.active {
+  padding: 0;
+  border: none;
+  outline: none;
+  height: 30px;
+  border-radius: 30px;
+  width: 100%;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    #09af25 0%,
+    #0393a0 47.5%,
+    #251885 100%
+  );
+  // padding: 5px 10px;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: white;
+  span {
+    font-size: 14px;
+    font-family: $primary_font;
+    margin: 0px 30px;
+  }
+}
+.titleConditionsBlock {
+  position: relative;
+  width: max-content;
+  .subtitle {
+    position: absolute;
+    top: 0;
+    right: -70px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
+.conditionsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 536px;
+  width: 100%;
+
+  .conditions {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: rgba(240, 240, 240, 1);
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .conditionsInput {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 28px;
+    padding: 0px;
+    padding-left: 10px;
+    font-size: 14px;
+    ::placeholder {
+      font-family: $primary_font;
+    }
+  }
+  .condition {
+    display: flex;
+    width: 100%;
+  }
+  .imageGroup {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .mainBlock {
+    align-items: center;
+  }
+  .selections {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .buttonGroup {
+    width: 100%;
+    .buttonContainer {
+      width: 100%;
+      .next {
+        width: 100%;
+        max-width: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .mainBlock {
+    gap: 20px;
+    height: 80%;
+  }
+  .default {
+    span {
+      font-size: 12px;
+      margin: 0px 25px;
+    }
+  }
+  .active {
+    span {
+      font-size: 12px;
+      margin: 0px 25px;
+    }
+  }
+}
