@@ -47,16 +47,18 @@ export const EditLessonModal = ({
     published,
   } = useSelector((state) => state.createLesson);
   const { conditions } = useSelector((state) => state.conditions);
+  const [originalConditions, setOriginalConditions] = useState<any[]>([]);
   const [localName, setLocalName] = useState<string>(lessonName);
   const [localDesc, setLocalDesc] = useState<string>(lessonDesc);
   const dispatch = useDispatch();
 
   useEffect(() => {
     const fetchData = async () => {
-      await getConditions(dispatch, idLesson);
+      const fetchedConditions = await getConditions(dispatch, idLesson);
+      setOriginalConditions(fetchedConditions);
     };
     fetchData();
-  }, [dispatch]);
+  }, [dispatch,idLesson]);
 
   const handleChangeName = (
     e: React.ChangeEvent<HTMLTextAreaElement>,
@@ -74,25 +76,57 @@ export const EditLessonModal = ({
     dispatch(setDescriptionLesson(value)); // Отправляем изменения в Redux
   };
   const updateLesson = async () => {
+    // Обновление урока
     const response = await postNewLesson(
       dispatch,
       idLesson,
       localName,
       localDesc,
       is_public,
-      published,
+      published
     );
+
+    // Обновление изображения (если есть)
     if (imageFile) {
-      const response = await postNewLessonThumbnail(
-        dispatch,
-        idLesson,
-        imageFile,
+      await postNewLessonThumbnail(dispatch, idLesson, imageFile);
+    }
+
+    // Удаляем дубликаты из условий
+    const uniqueConditions = conditions.filter(
+      (condition, index, self) =>
+        index ===
+        self.findIndex(
+          (c) =>
+            c.text.trim() === condition.text.trim() &&
+            c.link.trim() === condition.link.trim()
+        )
+    );
+
+    if (uniqueConditions.length !== conditions.length) {
+      toast.warn("Обнаружены дублирующиеся условия. Они были удалены.");
+    }
+
+    // Сравниваем уникальные условия с оригинальными
+    const changedConditions = uniqueConditions.filter((localCondition) => {
+      const original = originalConditions.find(
+        (orig) =>
+          orig.text.trim() === localCondition.text.trim() &&
+          orig.link.trim() === localCondition.link.trim()
       );
-      console.log(response);
+
+      // Если не найдено соответствие или изменено, условие считается изменённым
+      return !original || original.isOpen !== localCondition.isOpen;
+    });
+
+    // Если есть изменения, отправляем их
+    if (changedConditions.length > 0) {
+      await postConditions(idLesson, changedConditions);
+      toast.success("Изменённые условия успешно обновлены.");
+    } else {
+      toast.info("Нет изменений в условиях.");
     }
-    if (conditions.length > 0) {
-      await postConditions(idLesson, conditions);
-    }
+
+    // Сообщение об успехе или ошибке
     if (response === "Lesson updated successfully.") {
       toast.success("Урок успешно обновлен");
       closeModal();
