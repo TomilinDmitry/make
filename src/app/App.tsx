@@ -215,17 +215,17 @@ const App: FC = () => {
   };
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  useEffect(() => {
-    const password = prompt("Введите пароль:");
+  // useEffect(() => {
+  //   const password = prompt("Введите пароль:");
 
-    const correctPassword = "Make2024Update"; // Установленный пароль
+  //   const correctPassword = "Make2024Update"; // Установленный пароль
 
-    if (password === correctPassword) {
-      setIsAuthenticated(true); // Если пароль верный, показываем данные
-    } else {
-      alert("Неверный пароль");
-    }
-  }, []);
+  //   if (password === correctPassword) {
+  //     setIsAuthenticated(true); // Если пароль верный, показываем данные
+  //   } else {
+  //     alert("Неверный пароль");
+  //   }
+  // }, []);
 
   useEffect(() => {
     // Добавляем глобальный слушатель кликов
@@ -236,14 +236,14 @@ const App: FC = () => {
   }, []);
 
   if (loading) return <Loading />;
-  if (!isAuthenticated) {
-    // Если пользователь не авторизован, показываем только форму
-    return (
-      <div onClick={handleOverlayClick} className={styles.App}>
-        Неверный пароль
-      </div>
-    );
-  }
+  // if (!isAuthenticated) {
+  //   // Если пользователь не авторизован, показываем только форму
+  //   return (
+  //     <div onClick={handleOverlayClick} className={styles.App}>
+  //       Неверный пароль
+  //     </div>
+  //   );
+  // }
 
   return (
     <div onClick={handleOverlayClick} className={styles.App}>

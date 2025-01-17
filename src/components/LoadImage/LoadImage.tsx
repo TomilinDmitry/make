@@ -22,12 +22,10 @@ export const LoadImage = ({
   isPublic: boolean;
   published: boolean;
 }) => {
-  const { imageSrc, imageFile, is_public} = useSelector(
+  const { imageSrc, imageFile, is_public } = useSelector(
     (state) => state.createLesson,
   );
-  const {conditions} = useSelector(
-    (state) => state.conditions,
-  );
+  const { conditions } = useSelector((state) => state.conditions);
 
   const [localIsPublic, setLocalIsPublic] =
     useState<boolean>(isPublic);
@@ -160,18 +158,18 @@ export const LoadImage = ({
           <div className={s.customSelect}>
             <button
               onClick={() => {
-                dispatch(setIsPublic(true));
-                setLocalIsPublic(true);
+                dispatch(setPublished(true));
+                setLocalPublished(true);
               }}
-              className={localIsPublic ? s.active : s.default}>
+              className={localPublished  ? s.active : s.default}>
               <span>Открытый</span>
             </button>
             <button
               onClick={() => {
-                dispatch(setIsPublic(false));
-                setLocalIsPublic(false);
+                dispatch(setPublished(false));
+                setLocalPublished(false);
               }}
-              className={!localIsPublic ? s.active : s.default}>
+              className={!localPublished ? s.active : s.default}>
               <span>Закрытый</span>
             </button>
           </div>
@@ -183,24 +181,24 @@ export const LoadImage = ({
           <div className={s.customSelect}>
             <button
               onClick={() => {
-                dispatch(setPublished(false));
-                setLocalPublished(false);
+                dispatch(setIsPublic(false));
+                setLocalIsPublic(false);
               }}
-              className={!localPublished ? s.active : s.default}>
+              className={!localIsPublic ? s.active : s.default}>
               <span>В архив</span>
             </button>
             <button
               onClick={() => {
-                dispatch(setPublished(true));
-                setLocalPublished(true);
+                dispatch(setIsPublic(true));
+                setLocalIsPublic(true);
               }}
-              className={localPublished ? s.active : s.default}>
+              className={localIsPublic ? s.active : s.default}>
               <span>Опубликовать</span>
             </button>
           </div>
         </div>
       </div>
-      {!localIsPublic && (
+      {!localPublished && (
         <div className={s.conditionsBlock}>
           <section className={s.titleConditionsBlock}>
             <h1 className={s.title}>Условия открытия урока </h1>

@@ -227,7 +227,7 @@ export const NavigationProfile = () => {
       await getBoughtVideo(dispatch);
     }
     if (buttons[index].label === `Управление доступом`) {
-      if (typeUser === "author") {
+      if (typeUser.type === "author") {
         if (accessControl) return;
         await getAccessControl(dispatch);
       } else {
