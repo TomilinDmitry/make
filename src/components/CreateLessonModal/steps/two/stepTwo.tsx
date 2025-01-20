@@ -76,6 +76,7 @@ export const StepTwo = () => {
 
     uploadFile();
   }, [lessonLoadLink, videoFile, dispatch]);
+  console.log(isLoad && markUploaded === true)
   useEffect(() => {
     if (isLoad && markUploaded === true) {
       const fetch = async () => {

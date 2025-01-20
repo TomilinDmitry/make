@@ -126,21 +126,25 @@ export const CreateLessonModal = ({
   console.log(conditions.length);
   const setPublicNewLesson = async () => {
     try {
-      // if (nameLesson && descriptionLesson) {
-      await postNewLesson(
-        dispatch,
-        7,
-        "Новинка в макияже № 2",
-        "Лена Мотинова делает красивый макияж на новый 2025 год, стрелки глаз",
-        is_public,
-        published,
-      );
-      // }
-      if (imageFile) {
-        await postNewLessonThumbnail(dispatch, 7, imageFile);
+      if (nameLesson && descriptionLesson && videoStatus?.media_id) {
+        await postNewLesson(
+          dispatch,
+          videoStatus?.media_id,
+          nameLesson,
+          descriptionLesson,
+          is_public,
+          published,
+        );
       }
-      if (conditions.length > 0) {
-        await postConditions(7, conditions);
+      if (imageFile && videoStatus?.media_id) {
+        await postNewLessonThumbnail(
+          dispatch,
+          videoStatus?.media_id,
+          imageFile,
+        );
+      }
+      if (conditions.length > 0 && videoStatus?.media_id) {
+        await postConditions(videoStatus?.media_id, conditions);
       }
       toast.success("Урок успешно загружен!");
       closeModal();

@@ -651,7 +651,7 @@ export interface IGetStatus {
   status: string;
   progress: number;
   video_status: string;
-  media_id: string;
+  media_id:number;
 }
 
 export interface ILessonsHomePageState {
